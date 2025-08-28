@@ -31,24 +31,13 @@ def runtime_per_trip(route_stats):
 
         # skip any key that's 'total' to avoid adding to itself
         total = sum(runtime for key, runtime in stops.items() if key != total)
-        # for key, runtime in stops.items():
-        #     if key == "total":
-        #         continue
-        #     total += runtime
         
         # rebuild dict so 'total' always comes last
         scheduled_runtimes[trip_time] = {
             # make a new key value pair for each key value in the dict, only if its not total
             **{k: v for k, v in stops.items() if k != "total"},
             "total": total, # assign total to total only once you've rebuilt dictionary
-        }
-        # if "total" in stops:
-        #     del stops["total"]
-        # stops["total"] = total
-        
-        # doesn't work because stops is a COPY of the original dictionary, and we've altered the dict object directly
-        # print(f"new: ", trip_time, stops) 
-        # print(trip_time, scheduled_runtimes[trip_time]) 
+        } 
     
     # total the runtimes for percentile runtimes
     for trip_time, stops in percentile_runtimes.items():
@@ -83,7 +72,7 @@ def group_timebands(percentile_runtimes, threshold=3):
     grouped = [] # final list of groups
     current_group = []
     current_min = current_max = None # track max and min runtime in current group
-    print(type(percentile_runtimes))
+    # print(type(percentile_runtimes))
     for time, stops in percentile_runtimes.items():
         current_time = time
         current_runtime = percentile_runtimes[time]['total']
@@ -143,7 +132,7 @@ def make_timebands(grouped_runtimes):
     return timebands
    
 if __name__ == "__main__":
-    route = 11
+    route = 2
     percentile = 60
     if len(sys.argv) > 1:
         route = sys.argv[1]
@@ -158,7 +147,10 @@ if __name__ == "__main__":
     percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) # print(percentile_runtimes)
     grouped_timebands = group_timebands(percentile_runtimes)
     
-    new_timebands = make_timebands(grouped_timebands) # print(grouped_timebands, "\n", new_timebands)
-    
-    # holy shit i just did it
-    # what's next?? automate!
+    new_timebands = make_timebands(grouped_timebands) 
+    print(percentile_runtimes, "\n\n", schedule_runtimes, "\n\n", grouped_timebands, "\n\n", new_timebands)
+
+    # for route in agency-routes:
+    # if route != 'a': 
+    # break
+    # else: 

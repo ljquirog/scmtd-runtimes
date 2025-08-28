@@ -2,7 +2,7 @@ import http.client
 import csv
 import json
 
-def call(endpoint, route, percentile=60):
+def call(endpoint="path-stats", route=11, percentile=60):
     conn = http.client.HTTPSConnection("api.goswift.ly")
 
     headers = {
