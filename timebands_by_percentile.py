@@ -11,7 +11,6 @@ from datetime import datetime, timedelta
 
 '''
 yayyy comment block!!!
-
 ok ok
 '''
 def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
@@ -29,11 +28,7 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
     return new_timebands
 
 if __name__ == "__main__":
-    # route = input("what route(s) would you like to run this for? ")
-    # percentile = input("at what percentile? ")
-    # start_date = input("start date (format: 'MM-DD-YYYY'): ")
-    # end_date = input("end date (format: 'MM-DD-YYYY'): ")
-    # days_of_week = input("what days of the week? (format: '1,2,3,4,5,6,7') ")
+    # e.g. [11,19] 60 03-13-2025 06-18-2025 '1,2,3,4,5'
     route, percentile, start_date, end_date, days_of_week = input(
     "provide the following information, each variable separated by a space:\n" \
         "route - format: string \n\t" \
@@ -47,7 +42,7 @@ if __name__ == "__main__":
             "days in a comma separated list, no spaces\n\t" \
             "ex) 1,2,3,4,5,6,7\n"
         ).split()
-
+    print(type(route))
     if route == 'all':
         all_routes_sum = all_routes_test.run_all_routes(start_date, end_date, days_of_week)
         all_routes = all_routes_test.get_all_routes(all_routes_sum)
@@ -56,10 +51,13 @@ if __name__ == "__main__":
             if r == '18': continue
             timebands = route_new_timebands(r, percentile, start_date, end_date, days_of_week)
             print(r, "\n", timebands)
-    elif type(route) == list:
-        for r in route:
+    elif type(eval(route)) == list:
+        route_list = eval(route)
+        for r in route_list:
+            print(f"{r}: ")
             timebands = route_new_timebands(r, percentile, start_date, end_date, days_of_week)
             print(timebands)
+            print(f"count of timebands: {len(timebands)}")
     else:
         timebands = route_new_timebands(route, percentile, start_date, end_date, days_of_week)
         print(timebands)
