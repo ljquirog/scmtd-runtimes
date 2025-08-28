@@ -13,7 +13,11 @@ def runtime_per_trip(route_stats):
     
     for trip in route_stats['pathStats']:
         # initialize vars
-        scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']
+        scheduled_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], trip['scheduledTripStartTime'], trip['fromStop']['name']
+        percentile_seconds = trip['aggregates'][1]['value']
+        if percentile_seconds == None: print("\n\n\nNO TRIP OBSERVED\n\n\n")
+        percentile_mins = math.ceil(percentile_seconds/60) if percentile_seconds != None else scheduled_mins      
+        
 
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:
@@ -138,7 +142,7 @@ if __name__ == "__main__":
         route = sys.argv[1]
         percentile = sys.argv[2]
     
-    route_stats_json = api_request.call('path-stats', route, percentile)
+    route_stats_json = api_request.call(route, percentile)
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
 
     with open('routeStats.json', "r") as file:
@@ -148,7 +152,8 @@ if __name__ == "__main__":
     grouped_timebands = group_timebands(percentile_runtimes)
     
     new_timebands = make_timebands(grouped_timebands) 
-    print(percentile_runtimes, "\n\n", schedule_runtimes, "\n\n", grouped_timebands, "\n\n", new_timebands)
+    # print(percentile_runtimes, "\n\n", schedule_runtimes, "\n\n", grouped_timebands, "\n\n", new_timebands)
+    print(new_timebands)
 
     # for route in agency-routes:
     # if route != 'a': 
