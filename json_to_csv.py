@@ -56,6 +56,7 @@ def timebands_to_csv(filename, timebands_list):
         # write both rows
         writer.writerow(row1)
         writer.writerow(row2)
+    print(filename)
 
 if __name__ == "__main__":
     module = 'path-stats'
