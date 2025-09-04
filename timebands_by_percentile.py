@@ -11,8 +11,7 @@ import json_to_csv
 from datetime import datetime, timedelta
 
 '''
-yayyy comment block!!!
-ok ok
+comment block example
 '''
 
 def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
@@ -27,6 +26,7 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(route_stats) 
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes)    
     new_timebands = percentiles_test.make_timebands(grouped_timebands) 
+    
     return new_timebands
 
 if __name__ == "__main__":
@@ -68,4 +68,3 @@ if __name__ == "__main__":
         timebands = route_new_timebands(route, percentile, start_date, end_date, days_of_week)
         if export_csv == '1': json_to_csv.timebands_to_csv(f"route_{route}_{percentile}th_timebands.csv", timebands)
         print(timebands)
-        
