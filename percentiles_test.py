@@ -109,11 +109,11 @@ def group_timebands(percentile_runtimes, threshold=3):
         grouped.append(current_group)
 
     # print(type(grouped))
-    for i, timeband_group in enumerate(grouped):
-        print(i)
-        for a in timeband_group:
-            print(a[0])
-        print("next group")
+    # for i, timeband_group in enumerate(grouped):
+    #     print(i)
+    #     for a in timeband_group:
+    #         print(a[0])
+    #     print("next group")
 
     return grouped
    
