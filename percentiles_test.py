@@ -61,7 +61,6 @@ def runtime_per_trip(route_stats):
         # for a in stops:
         #     print(a)
         
-    print(percentile_runtimes['15:50:00']['High & Moore'])
     return percentile_runtimes, scheduled_runtimes
 
 """
