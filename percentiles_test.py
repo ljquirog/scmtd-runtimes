@@ -13,11 +13,8 @@ def runtime_per_trip(route_stats):
     
     for trip in route_stats['pathStats']:
         # initialize vars
-        scheduled_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], trip['scheduledTripStartTime'], trip['fromStop']['name']
-        percentile_seconds = trip['aggregates'][1]['value']
-        if percentile_seconds == None: print("\n\n\nNO TRIP OBSERVED\n\n\n")
-        percentile_mins = math.ceil(percentile_seconds/60) if percentile_seconds != None else scheduled_mins      
-        
+        scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']
+
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:
             scheduled_runtimes[trip_start_time] = {}
@@ -34,13 +31,24 @@ def runtime_per_trip(route_stats):
 
         # skip any key that's 'total' to avoid adding to itself
         total = sum(runtime for key, runtime in stops.items() if key != total)
+        # for key, runtime in stops.items():
+        #     if key == "total":
+        #         continue
+        #     total += runtime
         
         # rebuild dict so 'total' always comes last
         scheduled_runtimes[trip_time] = {
             # make a new key value pair for each key value in the dict, only if its not total
             **{k: v for k, v in stops.items() if k != "total"},
             "total": total, # assign total to total only once you've rebuilt dictionary
-        } 
+        }
+        # if "total" in stops:
+        #     del stops["total"]
+        # stops["total"] = total
+        
+        # doesn't work because stops is a COPY of the original dictionary, and we've altered the dict object directly
+        # print(f"new: ", trip_time, stops) 
+        # print(trip_time, scheduled_runtimes[trip_time]) 
     
     # total the runtimes for percentile runtimes
     for trip_time, stops in percentile_runtimes.items():
@@ -57,10 +65,7 @@ def runtime_per_trip(route_stats):
         }
         
         # print(trip_time, percentile_runtimes[trip_time]) 
-        # print(len(percentile_runtimes[trip_time]))
-        # for a in stops:
-        #     print(a)
-        
+
     return percentile_runtimes, scheduled_runtimes
 
 """
@@ -78,7 +83,7 @@ def group_timebands(percentile_runtimes, threshold=3):
     grouped = [] # final list of groups
     current_group = []
     current_min = current_max = None # track max and min runtime in current group
-    # print(type(percentile_runtimes))
+    print(type(percentile_runtimes))
     for time, stops in percentile_runtimes.items():
         current_time = time
         current_runtime = percentile_runtimes[time]['total']
@@ -106,13 +111,6 @@ def group_timebands(percentile_runtimes, threshold=3):
     # append the last group after looping
     if current_group:
         grouped.append(current_group)
-
-    # print(type(grouped))
-    # for i, timeband_group in enumerate(grouped):
-    #     print(i)
-    #     for a in timeband_group:
-    #         print(a[0])
-    #     print("next group")
 
     return grouped
    
@@ -145,29 +143,20 @@ def make_timebands(grouped_runtimes):
     return timebands
    
 if __name__ == "__main__":
-    route = 2
+    route = 11
     percentile = 60
     if len(sys.argv) > 1:
         route = sys.argv[1]
         percentile = sys.argv[2]
     
-    route_stats_json = api_request.call(route, percentile)
+    route_stats_json = api_request.call('path-stats', route, percentile)
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
 
     with open('routeStats.json', "r") as file:
         route_stats = json.load(file)
     
-    percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) 
-    # print(percentile_runtimes)
+    percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) # print(percentile_runtimes)
     grouped_timebands = group_timebands(percentile_runtimes)
-    print(grouped_timebands)
-    new_timebands = make_timebands(grouped_timebands) 
-    # print(percentile_runtimes, "\n\n", schedule_runtimes, "\n\n", grouped_timebands, "\n\n", new_timebands)
-    print(new_timebands)
-
-    print(grouped_timebands[0], new_timebands[0])
-
-    # for route in agency-routes:
-    # if route != 'a': 
-    # break
-    # else: 
+    
+    new_timebands = make_timebands(grouped_timebands) # print(grouped_timebands, "\n", new_timebands)
+    
