@@ -16,16 +16,16 @@ def get_route_stats(route, percentile, start_date, end_date, days_of_week):
     with open('routeStats.json', "r") as file:
         return json.load(file)
     
-def get_num_timepoints(route):
+def get_num_timepoints(route, start, end, dow):
     length, timepoints = 0, []
-    fixed_route_stats = get_route_stats(route, 60, '03-15-2025', '06-18-2025', '1,2,3,4,5')
+    fixed_route_stats = get_route_stats(route, 60, start, end, dow)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(fixed_route_stats)
-    print("here?")
     for trip_time, stops in percentile_runtimes.items():
         # Make sure user provided the right number of percentiles
         length = len(stops)-1
         # Grab all stop names except 'total'
         timepoints = [tp for tp in stops if tp != "total"]
+        print(stops)
         break  # only need to do this once
     return length, timepoints
 
@@ -134,14 +134,17 @@ def suggested_runtimes(route, percentiles, start, end, dow):
     return suggested
 
 if __name__ == "__main__":
+    len, tp = get_num_timepoints("16", "09-12-2025", "09-24-2025", "1,2,3,4,5")
+    '''9/25 left off here: DEBUG!!!!!!!!!!!'''
+    print(len, tp)
+    start_date, end_date = input("* Start date and end date\n** Format: 'MM-DD-YY' 'MM-DD-YY'\n").split()
+    days_of_week = input("* Day of week\n** Format: '1,2,3,4,5,6,7'\n")
     route = input("* Route: ")
-    length, timepoints = get_num_timepoints(route)
+    length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week)
     print(f"\n> Route {route} has {length} timepoints:")
     for tp in timepoints:
         print(">> ", tp)
     timepoints = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: [30,40,50]\n")
-    start_date, end_date = input("* Start date and end date\n** Format: 'MM-DD-YY' 'MM-DD-YY'\n").split()
-    days_of_week = input("* Day of week\n** Format: '1,2,3,4,5,6,7\n")
     '''
     # -- Left off here --
         # TODO: Add variables to suggested_runtimes

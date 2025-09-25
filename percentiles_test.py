@@ -12,8 +12,12 @@ def runtime_per_trip(route_stats):
     scheduled_runtimes = {}
     
     for trip in route_stats['pathStats']:
+        # skip if observed runtime is None (missing data)
+        if trip['aggregates'][1]['value'] is None:
+            continue
+
         # initialize vars
-        scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']
+        scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']  
 
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:
