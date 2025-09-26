@@ -145,6 +145,7 @@ if __name__ == "__main__":
     for tp in timepoints:
         print(">> ", tp)
     timepoints = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: [30,40,50]\n")
+
     '''
     # -- Left off here --
         # TODO: Add variables to suggested_runtimes
