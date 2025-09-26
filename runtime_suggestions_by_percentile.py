@@ -17,10 +17,13 @@ def get_route_stats(route, percentile, start_date, end_date, days_of_week):
         return json.load(file)
     
 def get_num_timepoints(route, start, end, dow):
+    print(route, start, end, dow)
     length, timepoints = 0, []
     fixed_route_stats = get_route_stats(route, 60, start, end, dow)
+    # print(fixed_route_stats)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(fixed_route_stats)
     for trip_time, stops in percentile_runtimes.items():
+        print(stops)
         # Make sure user provided the right number of percentiles
         length = len(stops)-1
         # Grab all stop names except 'total'
@@ -68,6 +71,7 @@ def suggested_runtimes(route, percentiles, start, end, dow):
     print("\n=== STEP 2: Extract timepoint names ===")
     timepoints = []
     for trip_time, stops in percentile_runtimes.items():
+        print(stops)
         # Make sure user provided the right number of percentiles
         if len(stops)-1 != len(percentiles):
             raise ValueError("Number of timepoints != number of percentiles provided")
@@ -134,28 +138,81 @@ def suggested_runtimes(route, percentiles, start, end, dow):
     return suggested
 
 if __name__ == "__main__":
-    len, tp = get_num_timepoints("16", "09-12-2025", "09-24-2025", "1,2,3,4,5")
-    '''9/25 left off here: DEBUG!!!!!!!!!!!'''
-    print(len, tp)
-    start_date, end_date = input("* Start date and end date\n** Format: 'MM-DD-YY' 'MM-DD-YY'\n").split()
-    days_of_week = input("* Day of week\n** Format: '1,2,3,4,5,6,7'\n")
+    l, tp = get_num_timepoints("16", "09-11-2025", "09-24-2025", "1,2,3,4,5")
+    print(l, tp)
+    
+    # DEBUG WHY THIS ISN'T WORKING LATER
+    '''
+    def_start, def_end = "09-11-2025", "09-24-2025"
+    default_wd, default_we = "1,2,3,4,5", "6,7"
+
+    date_presets = {
+        "default_s": def_start,
+        "default_e": def_end,
+    }
+
+    dow_presets = {
+        "default_wd": default_wd,
+        "default_we": default_we,
+    }
+
+    # Ask for start & end date
+    raw_dates = input(
+        f"* Start date and end date\n"
+        f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
+        f"Press Enter for default ({def_start} to {def_end}), "
+        f"or use 'default_s' / 'default_e': "
+    ).strip()
+
+    if raw_dates:
+        start_date, end_date = raw_dates.split()
+        # Replace presets if typed
+        start_date = date_presets.get(start_date, start_date)
+        end_date   = date_presets.get(end_date, end_date)
+    else:
+        # Blank input → full defaults
+        start_date, end_date = def_start, def_end
+
+    # Ask for days of week
+    days_of_week = input(
+        f"* Day of week\n"
+        f"** Format: '1,2,3,4,5,6,7'\n"
+        f"Press Enter for default (weekday={default_wd}), "
+        f"or type 'default_wd' / 'default_we': "
+    ).strip()
+
+    if days_of_week:
+        days_of_week = dow_presets.get(days_of_week, days_of_week)
+    else:
+        # Blank input → default weekdays
+        days_of_week = default_wd
+
     route = input("* Route: ")
     length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week)
     print(f"\n> Route {route} has {length} timepoints:")
     for tp in timepoints:
         print(">> ", tp)
-    timepoints = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: [30,40,50]\n")
+    
+    # if length == 0:
+    #     raise ValueError("Timepoint calculation failed; route has 0 timepoints")
+    
+    # percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: [30,40,50]\n")
 
     '''
     # -- Left off here --
         # TODO: Add variables to suggested_runtimes
         
-        Other ideas:
-        - Compare runtime suggestions total to avg timeband total
-            - E.g. do the 90th and take the difference to get layover
-        - Write a function to convert suggested runtimes to csv in json_to_csv and call it in main
-        - Combine timebands_by_percentile and runtime_suggestions_by_percentile together??
+        # Other ideas:
+        # - Compare runtime suggestions total to avg timeband total
+        #     - E.g. do the 90th and take the difference to get layover
+        # - Write a function to convert suggested runtimes to csv in json_to_csv and call it in main
+        # - Combine timebands_by_percentile and runtime_suggestions_by_percentile together??
 
-    I DON'T WANT TO STOP UGHHHH
     '''
-    # suggested_runtimes(11, [30,40,50], '03-25-2025', '04-13-2025', '1,2,3,4,5')
+
+    '''
+
+    route, start_date, end_date, days_of_week, percentiles = '20', '06-19-2025', '09-09-2025', '1,2,3,4,5', [30,30,40,50,50,60]
+    # print(get_num_timepoints(route, start_date, end_date, days_of_week))
+    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week)
+    print(suggested)

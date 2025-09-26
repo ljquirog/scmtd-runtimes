@@ -12,6 +12,7 @@ def runtime_per_trip(route_stats):
     scheduled_runtimes = {}
     
     for trip in route_stats['pathStats']:
+        # print(trip)
         # skip if observed runtime is None (missing data)
         if trip['aggregates'][1]['value'] is None:
             continue
