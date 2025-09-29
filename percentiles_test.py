@@ -88,7 +88,7 @@ def group_timebands(percentile_runtimes, threshold=3):
     grouped = [] # final list of groups
     current_group = []
     current_min = current_max = None # track max and min runtime in current group
-    print(type(percentile_runtimes))
+    
     for time, stops in percentile_runtimes.items():
         current_time = time
         current_runtime = percentile_runtimes[time]['total']
