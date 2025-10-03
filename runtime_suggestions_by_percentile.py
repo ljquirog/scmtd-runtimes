@@ -34,6 +34,58 @@ def get_num_timepoints(route, start, end, dow):
         break  # only need to do this once
     return length, timepoints
 
+def end_to_end_runtimes(route, start, end, dow):
+    print("END TO END RUNTIMES")
+    # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
+    print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
+    base_route_stats = get_route_stats(route, 60, start, end, dow)
+    percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
+
+    grouped_timebands = percentiles_test.group_timebands(percentile_runtimes) # groups trips if runtimes are within threshold
+    new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
+
+    base_route_stats = get_route_stats(route, 90, start, end, dow)
+    percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
+    
+
+    # === STEP 2: Run end-to-end percentile runtimes per trip ===
+    print("\n=== STEP 2: Run end-to-end percentile runtimes per trip ===")
+    runtimes_90 = {"total": {}}
+    for trip_time, stops in percentile_runtimes.items():
+        runtimes_90["total"][trip_time] = stops["total"]
+    # print(runtimes_90)
+
+    # === STEP 3: Aggregate runtimes per timeband ===
+    print("\n=== STEP 4: Aggregate runtimes per timeband ===")
+
+    suggested = []
+    for j, (timeband_range, _) in enumerate(new_timebands):
+        tb_start, tb_end = timeband_range
+        agg = {}
+        print(f"\nTimeband {tb_start} - {tb_end}")
+
+        # For each timepoint, look at all trips inside this timeband group
+        for total in runtimes_90:
+            new_runtimes = []
+
+            for trip_time, _ in grouped_timebands[j]:
+                if trip_time in runtimes_90[total]:
+                    new_runtimes.append(runtimes_90[total][trip_time])  # append all days
+
+            if new_runtimes:
+                avg_val = math.ceil(sum(new_runtimes) / len(new_runtimes))
+                agg[total] = avg_val
+                print(f"  → Avg across {len(new_runtimes)} values for {total}: {avg_val}")
+
+        agg["total"] = sum(agg.values())
+        print(f"  → Total runtime for timeband: {agg['total']}")
+        suggested.append(((tb_start, tb_end), agg))   
+    
+    print(suggested)
+    return suggested
+    
+
+
 # t=0 for percentile, t=1 for scheduled
 def suggested_runtimes(route, percentiles, start, end, dow, t=0):
     """
@@ -44,6 +96,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
         percentiles (list[int]): List of percentiles, one per timepoint
         start, end (str): Date range
         dow (list): Days of week to filter
+        t (int): Type of runtime; t=0 for percentile, 1 for scheduled
 
     Returns:
         list: Suggested runtimes per new timeband in the form:
@@ -64,7 +117,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
     # percentile_runtimes = schedule_runtimes # be careful
     runtimes = percentile_runtimes if t==0 else schedule_runtimes
     
-
     # print("\nGrouped timebands (raw trips grouped):")
     # for tb in grouped_timebands:
     #     print("   ", tb)
@@ -92,26 +144,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
     for i, p in enumerate(percentiles):
         tp = timepoints[i]
         print(f"\n-- Collecting runtimes for timepoint '{tp}' at percentile {p} --")
-        
-        # for day in daterange(start_dt, end_dt):
-        #     day_str = day.strftime("%m-%d-%Y")
-        #     print(day_str)
-        #     # Skip if this day’s DOW not in allowed list
-        #     dow_cp = [int(x.strip()) for x in dow.split(",") if x.strip()] # make dow a list
-        #     dow_cp = [(d % 7) for d in dow_cp] # shift: 1→0 (Mon), …, 7→6 (Sun)
-            
-        #     if day.weekday() not in dow_cp:
-        #         continue
-        #     daily_stats = get_route_stats(route, p, day_str, day_str, dow)
-        #     # print(daily_stats)
-        #     daily_percentiles, _ = percentiles_test.runtime_per_trip(daily_stats)
 
-        #     # print(len(daily_percentiles))
-
-        #     for trip_time, stops in daily_percentiles.items():
-        #         value = stops.get(tp, 0)
-        #         per_timepoint_runtimes[tp].setdefault(trip_time, []).append(value)
-                # print(f"Trip {trip_time}: {tp} runtime = {value}")
         route_stats = get_route_stats(route, p, start, end, dow)
         
         if t==0:
@@ -151,7 +184,8 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
         agg["total"] = sum(agg.values())
         print(f"  → Total runtime for timeband: {agg['total']}")
         suggested.append(((tb_start, tb_end), agg))   
-            
+    
+    # print(per_timepoint_runtimes)
     # === FINAL OUTPUT ===
     print("\n=== FINAL SUGGESTED RUNTIMES ===")
     for tb in suggested:
@@ -253,8 +287,9 @@ if __name__ == "__main__":
     route, start_date, end_date, days_of_week, percentiles = (
         "11", "06-19-2025", "09-09-2025", "1,2,3,4,5", [30,40,60]
     )
-    data = suggested_runtimes(
-        route, percentiles, start_date, end_date, days_of_week, 1
-    )
+    # data = suggested_runtimes(
+    #     route, percentiles, start_date, end_date, days_of_week, 1
+    # )
+    end_to_end_runtimes(route, start_date, end_date, days_of_week)
 
     

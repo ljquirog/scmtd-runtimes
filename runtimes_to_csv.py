@@ -68,3 +68,8 @@ if __name__ == "__main__":
         route, percentiles, start_date, end_date, days_of_week, 1
     )
     runtimes_to_csv(data, route, filename, write_header=False, add_blank_row=True)
+
+    data = runtime_suggestions_by_percentile.end_to_end_runtimes(route, start_date, end_date, days_of_week)
+    runtimes_to_csv(data, route, filename, write_header=False, add_blank_row=True)
+
+
