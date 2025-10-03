@@ -114,8 +114,10 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
                 # print(f"Trip {trip_time}: {tp} runtime = {value}")
         route_stats = get_route_stats(route, p, start, end, dow)
         
-        
-        runtimes, _ = percentiles_test.runtime_per_trip(route_stats)
+        if t==0:
+            runtimes, _ = percentiles_test.runtime_per_trip(route_stats)
+        else: 
+            _, runtimes = percentiles_test.runtime_per_trip(route_stats)
 
         # Fill per_timepoint_runtimes with runtimes for this stop at this percentile
         for trip_time, stops in runtimes.items():
