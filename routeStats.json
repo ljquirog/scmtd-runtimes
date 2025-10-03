@@ -1,3 +1,4516 @@
 {
-  "pathStats": []
+  "pathStats": [
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "06:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 528.494140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "07:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 513.744140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "07:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 620.37890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "08:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 659.666015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "08:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 634.48046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "09:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 615.57421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "09:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 586.1796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "10:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 602.17578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "10:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 568.265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "11:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 604.59765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "11:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 633.40234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "12:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 677.1484375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "12:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 643.078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "13:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 644.046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "13:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 629.30859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "14:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 650.30859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "14:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 624.33203125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "15:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 625.49609375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "15:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 612.8125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "16:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 643.69921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "16:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 613.48828125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "17:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 621.3203125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "17:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 610.0859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "18:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 587.5234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "18:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 537.4140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "19:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 539.59375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "19:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 540.2421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "20:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 536.9140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "20:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 561.5234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "21:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 452.125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "22:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 454.859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "23:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 426.390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "06:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 531.642578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "07:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 557.69140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "07:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 542.232421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "08:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 612.08203125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "08:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 579.66796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "09:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 589.984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "09:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 545.890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "10:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 529.77734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "10:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 527.640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "11:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 543.83984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "11:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 528.0625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "12:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 590.14453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "12:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 552.0078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "13:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 597.06640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "13:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 543.8125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "14:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 568.37890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "14:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 583.5859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "15:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 596.70703125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "15:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 594.71875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "16:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 602.9375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "16:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 575.8828125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "17:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 557.078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "17:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 528.17578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 55,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "18:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 536.921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "18:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 547.015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "19:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 537.53125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "19:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 529.1796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "20:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 546.46875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 57,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "20:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 538.7578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 54,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "21:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 484.265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 56,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "22:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 458.8046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "23:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 410.8984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "High & Moore",
+        "id": "1121",
+        "gtfsStopSequence": 7,
+        "code": 1513,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 28,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "06:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 966.705078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 26,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "07:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1002.748046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 30,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "07:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1099.1640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 29,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "08:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 993.341796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 36,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "08:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 984.05859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 36,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "09:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 976.94140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 45,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "09:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 982.8046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 34,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "10:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1062.32421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 44,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "10:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1059.10546875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 35,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "11:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1073.84375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 43,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "11:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1091.015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 34,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "12:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1086.421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 48,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "12:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1082.59375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 42,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "13:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1155.1484375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 47,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "13:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1135.265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 52,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "14:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1425.59375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 47,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "14:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1209.40625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "15:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1459.73828125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 43,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "15:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1307.02734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 53,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "16:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1286.921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 45,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "16:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1138.22265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 51,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "17:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1138.9453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 47,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "17:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1068.37890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 51,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "18:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1068.8984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 44,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "18:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 993.203125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 50,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "19:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1070.8046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 34,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "19:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 986.4921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 51,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "20:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1089.265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 46,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "20:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 909.625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 29,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "21:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 868.453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 10,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "22:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 862.2890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "11",
+      "directionId": "1",
+      "tripPatternId": "route_11_1726_to_1594_dd725aa39c0903a3f50ec032307afb4b2cfb5d59cd184b00af212446f4e4137c",
+      "numScheduledPaths": 57,
+      "numObservedPaths": 13,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "23:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 827.1796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1601",
+        "gtfsStopSequence": 16,
+        "code": 2674,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 28,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 29,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    }
+  ]
 }

@@ -10,16 +10,16 @@ from datetime import datetime, timedelta
 def runtime_per_trip(route_stats):
     percentile_runtimes = {}
     scheduled_runtimes = {}
-    
+
     for trip in route_stats['pathStats']:
-        # print(trip)
         # skip if observed runtime is None (missing data)
         if trip['aggregates'][1]['value'] is None:
             continue
 
         # initialize vars
         scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']  
-
+        
+        print(f"scheduled: {scheduled_mins}, percentile: {percentile_mins}")
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:
             scheduled_runtimes[trip_start_time] = {}
@@ -154,13 +154,15 @@ if __name__ == "__main__":
         route = sys.argv[1]
         percentile = sys.argv[2]
     
-    route_stats_json = api_request.call('path-stats', route, percentile)
+    route_stats_json = api_request.call()
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
 
     with open('routeStats.json', "r") as file:
         route_stats = json.load(file)
     
-    percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) # print(percentile_runtimes)
+    print(route_stats)
+    percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) 
+    print(schedule_runtimes)
     grouped_timebands = group_timebands(percentile_runtimes)
     
     new_timebands = make_timebands(grouped_timebands) # print(grouped_timebands, "\n", new_timebands)
