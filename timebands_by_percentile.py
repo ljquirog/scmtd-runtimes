@@ -30,7 +30,7 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
     return new_timebands
 
 if __name__ == "__main__":
-    # e.g. [11,19] 60 03-13-2025 06-18-2025 '1,2,3,4,5' 1
+    # e.g. [1,2] 60 03-13-2025 06-18-2025 '1,2,3,4,5' 1
     route, percentile, start_date, end_date, days_of_week , export_csv = input(
     "provide the following information, each variable separated by a space:\n" \
         "route - format: string \n\t" \

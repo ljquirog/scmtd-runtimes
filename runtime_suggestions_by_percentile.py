@@ -113,18 +113,11 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
+    print(grouped_timebands)
     # checking what it would look like if you ran this w/ scheduled runtimes
     # percentile_runtimes = schedule_runtimes # be careful
     runtimes = percentile_runtimes if t==0 else schedule_runtimes
     
-    # print("\nGrouped timebands (raw trips grouped):")
-    # for tb in grouped_timebands:
-    #     print("   ", tb)
-
-    # print("\nNew (suggested) timebands (rolled up from groups):")
-    # for tb in new_timebands:
-    #     print("   ", tb)
-
     # === STEP 2: Extract timepoint names from the first trip ===
     print("\n=== STEP 2: Extract timepoint names ===")
     timepoints = []
@@ -285,11 +278,11 @@ if __name__ == "__main__":
     # # print(suggested)
     
     route, start_date, end_date, days_of_week, percentiles = (
-        "11", "06-19-2025", "09-09-2025", "1,2,3,4,5", [30,40,60]
+        "1", "06-19-2025", "09-09-2025", "1,2,3,4,5", [30,40,60]
     )
-    # data = suggested_runtimes(
-    #     route, percentiles, start_date, end_date, days_of_week, 1
-    # )
-    end_to_end_runtimes(route, start_date, end_date, days_of_week)
+    data = suggested_runtimes(
+        route, percentiles, start_date, end_date, days_of_week, 1
+    )
+    # end_to_end_runtimes(route, start_date, end_date, days_of_week)
 
     

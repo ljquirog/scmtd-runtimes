@@ -81,8 +81,9 @@ if __name__ == "__main__":
             route_stats = json.load(file)
     
             percentile_runtimes, sched = percentiles_test.runtime_per_trip(route_stats)
-            # print(percentile_runtimes)
+            
             grouped_timebands = percentiles_test.group_timebands(percentile_runtimes)
+            print(grouped_timebands)
     
             new_timebands = percentiles_test.make_timebands(grouped_timebands)
 

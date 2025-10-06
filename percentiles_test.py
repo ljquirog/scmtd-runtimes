@@ -19,7 +19,6 @@ def runtime_per_trip(route_stats):
         # initialize vars
         scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']  
         
-        print(f"scheduled: {scheduled_mins}, percentile: {percentile_mins}")
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:
             scheduled_runtimes[trip_start_time] = {}
