@@ -256,7 +256,7 @@ if __name__ == "__main__":
 
     # run actual runtimes
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
-    runtimes_to_csv.runtimes_to_csv(suggested, route, filename, write_header=False, add_blank_row=True)
+    runtimes_to_csv.runtimes_to_csv(scheduled, route, filename, write_header=False, add_blank_row=True)
 
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     print(end_to_end, type(end_to_end))
