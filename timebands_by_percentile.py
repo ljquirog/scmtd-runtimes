@@ -1,3 +1,5 @@
+# creates new timebands
+
 import http.client
 import csv
 import json
@@ -10,12 +12,8 @@ import all_routes_test
 import json_to_csv
 from datetime import datetime, timedelta
 
-'''
-comment block example
-'''
-
-def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
-    route_stats_json = api_request.call(route, percentile, start_date, end_date, days_of_week)
+def route_new_timebands(route, percentile, start_date, end_date, days_of_week, direction):
+    route_stats_json = api_request.call(route, percentile, start_date, end_date, days_of_week, direction)
     
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
     with open('routeStats.json', "r") as file:
@@ -30,8 +28,8 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week):
     return new_timebands
 
 if __name__ == "__main__":
-    # e.g. [1,2] 60 03-13-2025 06-18-2025 '1,2,3,4,5' 1
-    route, percentile, start_date, end_date, days_of_week , export_csv = input(
+    # e.g. [1,2] 60 03-13-2025 06-18-2025 '1,2,3,4,5' 1 0
+    route, percentile, start_date, end_date, days_of_week, direction, export_csv = input(
     "provide the following information, each variable separated by a space:\n" \
         "route - format: string \n\t" \
             "ex) for all routes: 'all', a subset of routes: '[str1, str2])" \
@@ -43,6 +41,8 @@ if __name__ == "__main__":
         "day of the week - format: string\n\t" \
             "days in a comma separated list, no spaces\n\t" \
             "ex) 1,2,3,4,5,6,7\n" \
+        "direction: format: int\n\t" \
+        "0 for outbound, 1 for inbound (loops)\n"
         "csv: format: int\n\t" \
             "0 = no, 1 = yes\n"
         ).split()
@@ -53,18 +53,18 @@ if __name__ == "__main__":
         print(all_routes)
         for r in all_routes:
             if r == '18': continue
-            timebands = route_new_timebands(r, percentile, start_date, end_date, days_of_week)
+            timebands = route_new_timebands(r, percentile, start_date, end_date, days_of_week, direction)
             if export_csv == '1': json_to_csv.timebands_to_csv(f"route_{r}_{percentile}th_timebands.csv", timebands)
             print(r, "\n", timebands)
     elif type(eval(route)) == list:
         route_list = eval(route)
         for r in route_list:
             print(f"{r}: ")
-            timebands = route_new_timebands(r, percentile, start_date, end_date, days_of_week)
+            timebands = route_new_timebands(r, percentile, start_date, end_date, days_of_week, direction)
             if export_csv == '1': json_to_csv.timebands_to_csv(f"route_{r}_{percentile}th_timebands.csv", timebands)
             print(timebands)
             print(f"count of timebands: {len(timebands)}")
     else:
-        timebands = route_new_timebands(route, percentile, start_date, end_date, days_of_week)
+        timebands = route_new_timebands(route, percentile, start_date, end_date, days_of_week, direction)
         if export_csv == '1': json_to_csv.timebands_to_csv(f"route_{route}_{percentile}th_timebands.csv", timebands)
         print(timebands)

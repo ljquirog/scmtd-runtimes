@@ -1,3 +1,5 @@
+# puts api call response into a json file called "routeStats.json".
+
 import http.client 
 import json
 import math
@@ -11,7 +13,6 @@ def txt_convert(filename, route_stats):
         scheduled_seconds = float(path["aggregates"][0]["value"][0])
         scheduled_minutes = math.ceil(scheduled_seconds / 60)
 
-        # add a new field (or overwrite if you prefer)
         path["scheduledRuntimeMinutes"] = scheduled_minutes
 
     # write back to file as raw JSON

@@ -60,7 +60,7 @@ def timebands_to_csv(filename, timebands_list):
 
 if __name__ == "__main__":
     module = 'path-stats'
-    filename = 'routeStats2.csv'
+    filename = 'routeStats.csv'
     route = 11
     percentile = 60
     if len(sys.argv) > 1:

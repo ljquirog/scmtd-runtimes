@@ -10,20 +10,20 @@ def daterange(start_date, end_date):
     for n in range(int((end_date - start_date).days) + 1):
         yield start_date + timedelta(n)
 
-def get_route_stats(route, percentile, start_date, end_date, days_of_week):
+def get_route_stats(route, percentile, start_date, end_date, days_of_week, direction):
     """
     Fetch route stats JSON for a given percentile and write to file.
     Returns the parsed JSON as a dict.
     """
-    route_stats_json = api_request.call(route, percentile, start_date, end_date, days_of_week)
+    route_stats_json = api_request.call(route, percentile, start_date, end_date, days_of_week, direction)
     json_to_file.txt_convert('routeStats.json', route_stats_json)  
     
     with open('routeStats.json', "r") as file:
         return json.load(file)
     
-def get_num_timepoints(route, start, end, dow):
+def get_num_timepoints(route, start, end, dow, direction):
     length, timepoints = 0, []
-    fixed_route_stats = get_route_stats(route, 60, start, end, dow)
+    fixed_route_stats = get_route_stats(route, 60, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(fixed_route_stats)
     for trip_time, stops in percentile_runtimes.items():
         
@@ -34,17 +34,17 @@ def get_num_timepoints(route, start, end, dow):
         break  # only need to do this once
     return length, timepoints
 
-def end_to_end_runtimes(route, start, end, dow):
+def end_to_end_runtimes(route, start, end, dow, direction):
     print("END TO END RUNTIMES")
     # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
     print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
-    base_route_stats = get_route_stats(route, 60, start, end, dow)
+    base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
 
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
-    base_route_stats = get_route_stats(route, 90, start, end, dow)
+    base_route_stats = get_route_stats(route, 90, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
     
 
@@ -87,7 +87,7 @@ def end_to_end_runtimes(route, start, end, dow):
 
 
 # t=0 for percentile, t=1 for scheduled
-def suggested_runtimes(route, percentiles, start, end, dow, t=0):
+def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     """
     Build suggested runtimes for each timeband, using custom percentiles per timepoint.
 
@@ -108,7 +108,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
 
     # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
     print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
-    base_route_stats = get_route_stats(route, 60, start, end, dow)
+    base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
@@ -138,7 +138,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
         tp = timepoints[i]
         print(f"\n-- Collecting runtimes for timepoint '{tp}' at percentile {p} --")
 
-        route_stats = get_route_stats(route, p, start, end, dow)
+        route_stats = get_route_stats(route, p, start, end, dow, direction)
         
         if t==0:
             runtimes, _ = percentiles_test.runtime_per_trip(route_stats)
@@ -178,7 +178,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
         print(f"  → Total runtime for timeband: {agg['total']}")
         suggested.append(((tb_start, tb_end), agg))   
     
-    # print(per_timepoint_runtimes)
     # === FINAL OUTPUT ===
     print("\n=== FINAL SUGGESTED RUNTIMES ===")
     for tb in suggested:
@@ -186,17 +185,8 @@ def suggested_runtimes(route, percentiles, start, end, dow, t=0):
 
     return suggested
 
-def test_diff():
-    base_route_stats = get_route_stats(11, 60, "06-19-2025", "09-10-2025", "1,2,3,4,5")
-    percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
-    with open("percentile_test.txt", "w") as file:
-        file.write(str(percentile_runtimes))
-    
-    with open("schedule_test.txt", "w") as file:
-        file.write(str(schedule_runtimes))
     
 if __name__ == "__main__":
-    
     # def_start, def_end = "09-11-2025", "09-24-2025"
     # default_wd, default_we = "1,2,3,4,5", "6,7"
 
@@ -242,7 +232,7 @@ if __name__ == "__main__":
     #     days_of_week = default_wd
 
     # route = input("* Route: ")
-    # length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week)
+    # length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
     # print(f"\n> Route {route} has {length} timepoints:")
     # for tp in timepoints:
     #     print(">> ", tp)
@@ -254,35 +244,9 @@ if __name__ == "__main__":
 
     # percentiles = [int(x.strip()) for x in percentiles.split(",")]
 
-    # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week)
+    # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction)
     # # print(suggested)
     
-    # -- Left off here --
-        # TODO: Add variables to suggested_runtimes
-        
-        # Other ideas:
-        # - Compare runtime suggestions total to avg timeband total
-        #     - E.g. do the 90th and take the difference to get layover
-        # - Write a function to convert suggested runtimes to csv in json_to_csv and call it in main
-        # - Combine timebands_by_percentile and runtime_suggestions_by_percentile together??
-
-    # 09/29: left off debugging why route stats is empty for route 16 @ a single day level
-    # in step 3, get_route_stats returns an empty path_stats. so debug at this level first then revisit
-    # the point: aggregate all the days in the date range instead of just one (last commit)
-    # rs = get_route_stats('16', 60, '09-11-2025', '09-14-2025', '1,2,3,4,5')
-    # print(rs)
-
-    # route, start_date, end_date, days_of_week, percentiles = '11', '09-11-2025', '10-01-2025', '1,2,3,4,5', [30,40,50]
-    # # print(get_num_timepoints(route, start_date, end_date, days_of_week))
-    # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, 1)
-    # # print(suggested)
-    
-    route, start_date, end_date, days_of_week, percentiles = (
-        "1", "06-19-2025", "09-09-2025", "1,2,3,4,5", [30,40,60]
-    )
-    data = suggested_runtimes(
-        route, percentiles, start_date, end_date, days_of_week, 1
-    )
-    # end_to_end_runtimes(route, start_date, end_date, days_of_week)
-
+    route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-01-2025', '1,2,3,4,5', [30,40,50], 1
+    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     

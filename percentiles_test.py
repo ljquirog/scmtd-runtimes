@@ -46,14 +46,7 @@ def runtime_per_trip(route_stats):
             **{k: v for k, v in stops.items() if k != "total"},
             "total": total, # assign total to total only once you've rebuilt dictionary
         }
-        # if "total" in stops:
-        #     del stops["total"]
-        # stops["total"] = total
         
-        # doesn't work because stops is a COPY of the original dictionary, and we've altered the dict object directly
-        # print(f"new: ", trip_time, stops) 
-        # print(trip_time, scheduled_runtimes[trip_time]) 
-    
     # total the runtimes for percentile runtimes
     for trip_time, stops in percentile_runtimes.items():
         total = 0
@@ -66,23 +59,18 @@ def runtime_per_trip(route_stats):
             # make a new key value pair for each key value in the dict, only if its not total
             **{k: v for k, v in stops.items() if k != "total"},
             "total": total, # assign total to total only once you've rebuilt dictionary
-        }
-        
-        # print(trip_time, percentile_runtimes[trip_time]) 
+        }      
 
     return percentile_runtimes, scheduled_runtimes
 
 """
     Groups trips into timebands based on runtime stability.
-
     Args:
-        percentile_runtimes (dict): Dict where keys are trip times (string),
-                                    and values are dicts with 'total' runtime (int).
+        percentile_runtimes (dict): Dict where keys are trip times (string), and values are dicts with 'total' runtime (int).
         threshold (int): Maximum allowed difference (minutes) within a group's runtimes.
-
     Returns:
         list: A list of groups, where each group is a list of (time, runtime) tuples.
-    """
+"""
 def group_timebands(percentile_runtimes, threshold=3):
     grouped = [] # final list of groups
     current_group = []
@@ -147,22 +135,21 @@ def make_timebands(grouped_runtimes):
     return timebands
    
 if __name__ == "__main__":
-    route = 11
-    percentile = 60
-    if len(sys.argv) > 1:
-        route = sys.argv[1]
-        percentile = sys.argv[2]
+    route, percentile, start, end, dow, dir = 11, 60, "06-19-2025", "09-19-2025", "1,2,3,4,5", 1
+    # if len(sys.argv) > 1:
+    #     route = sys.argv[1]
+    #     percentile = sys.argv[2]
     
-    route_stats_json = api_request.call()
+    route_stats_json = api_request.call(route, percentile, start, end, dow, dir)
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
 
     with open('routeStats.json', "r") as file:
         route_stats = json.load(file)
     
-    print(route_stats)
+    
     percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) 
-    print(schedule_runtimes)
     grouped_timebands = group_timebands(percentile_runtimes)
+    print(grouped_timebands)
     
     new_timebands = make_timebands(grouped_timebands) # print(grouped_timebands, "\n", new_timebands)
-    
+    print(new_timebands)
