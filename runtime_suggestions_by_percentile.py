@@ -3,6 +3,7 @@ import math
 import api_request
 import json_to_file
 import percentiles_test
+import runtimes_to_csv
 from datetime import datetime, timedelta
 
 def daterange(start_date, end_date):
@@ -187,66 +188,76 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
 
     
 if __name__ == "__main__":
-    # def_start, def_end = "09-11-2025", "09-24-2025"
-    # default_wd, default_we = "1,2,3,4,5", "6,7"
+    def_start, def_end = "09-11-2025", "09-24-2025"
+    default_wd, default_we = "1,2,3,4,5", "6,7"
 
-    # date_presets = {
-    #     "default_s": def_start,
-    #     "default_e": def_end,
-    # }
+    date_presets = {
+        "default_s": def_start,
+        "default_e": def_end,
+    }
 
-    # dow_presets = {
-    #     "default_wd": default_wd,
-    #     "default_we": default_we,
-    # }
+    dow_presets = {
+        "default_wd": default_wd,
+        "default_we": default_we,
+    }
 
-    # # Ask for start & end date
-    # raw_dates = input(
-    #     f"* Start date and end date\n"
-    #     f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
-    #     f"Press Enter for default ({def_start} to {def_end}), "
-    #     f"or use 'default_s' / 'default_e': "
-    # ).strip()
+    # Ask for start & end date
+    raw_dates = input(
+        f"* Start date and end date\n"
+        f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
+        f"Press Enter for default ({def_start} to {def_end}), "
+        f"or use 'default_s' / 'default_e': "
+    ).strip()
 
-    # if raw_dates:
-    #     start_date, end_date = raw_dates.split()
-    #     # Replace presets if typed
-    #     start_date = date_presets.get(start_date, start_date)
-    #     end_date   = date_presets.get(end_date, end_date)
-    # else:
-    #     # Blank input → full defaults
-    #     start_date, end_date = def_start, def_end
+    if raw_dates:
+        start_date, end_date = raw_dates.split()
+        # Replace presets if typed
+        start_date = date_presets.get(start_date, start_date)
+        end_date   = date_presets.get(end_date, end_date)
+    else:
+        # Blank input → full defaults
+        start_date, end_date = def_start, def_end
 
-    # # Ask for days of week
-    # days_of_week = input(
-    #     f"* Day of week\n"
-    #     f"** Format: '1,2,3,4,5,6,7'\n"
-    #     f"Press Enter for default (weekday={default_wd}), "
-    #     f"or type 'default_wd' / 'default_we': "
-    # ).strip()
+    # Ask for days of week
+    days_of_week = input(
+        f"* Day of week\n"
+        f"** Format: '1,2,3,4,5,6,7'\n"
+        f"Press Enter for default (weekday={default_wd}), "
+        f"or type 'default_wd' / 'default_we': "
+    ).strip()
 
-    # if days_of_week:
-    #     days_of_week = dow_presets.get(days_of_week, days_of_week)
-    # else:
-    #     # Blank input → default weekdays
-    #     days_of_week = default_wd
+    if days_of_week:
+        days_of_week = dow_presets.get(days_of_week, days_of_week)
+    else:
+        # Blank input → default weekdays
+        days_of_week = default_wd
 
-    # route = input("* Route: ")
-    # length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-    # print(f"\n> Route {route} has {length} timepoints:")
-    # for tp in timepoints:
-    #     print(">> ", tp)
+    route = input("* Route: ")
+    direction = input("* Direction (0=outbound, 1=inbound): ")
+    length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
+    print(f"\n> Route {route} has {length} timepoints:")
+    for tp in timepoints:
+        print(">> ", tp)
     
-    # if length == 0:
-    #     raise ValueError("Timepoint calculation failed; route has 0 timepoints")
+    if length == 0:
+        raise ValueError("Timepoint calculation failed; route has 0 timepoints")
     
-    # percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
+    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
 
-    # percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    percentiles = [int(x.strip()) for x in percentiles.split(",")]
 
-    # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction)
-    # # print(suggested)
     
-    route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-01-2025', '1,2,3,4,5', [30,40,50], 1
+    # route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-01-2025', '1,2,3,4,5', [30,40,50], 1
+
+    # run suggested runtimes > file
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
-    
+    filename = f"route_{route}_suggested_runtimes.csv"
+    runtimes_to_csv.runtimes_to_csv(suggested, route, filename, write_header=True)
+
+    # run actual runtimes
+    scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
+    runtimes_to_csv.runtimes_to_csv(suggested, route, filename, write_header=False, add_blank_row=True)
+
+    end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
+    print(end_to_end, type(end_to_end))
+    runtimes_to_csv.runtimes_to_csv(end_to_end, route, filename, write_header=False, add_blank_row=True)

@@ -55,17 +55,17 @@ if __name__ == "__main__":
     filename = "11_suggested_runtimes.csv"
 
     # Suggested (first run)
-    route, start_date, end_date, days_of_week, percentiles = (
-        "11", "06-19-2025", "09-09-2025", "1,2,3,4,5", [30,40,60]
+    route, start_date, end_date, days_of_week, percentiles, direction = (
+        "11", "06-19-2025", "09-09-2025", "1,2,3,4,5", [30,40,60], 1
     )
     data = runtime_suggestions_by_percentile.suggested_runtimes(
-        route, percentiles, start_date, end_date, days_of_week, 0
+        route, percentiles, start_date, end_date, days_of_week, direction, 0
     )
     runtimes_to_csv(data, route, filename, write_header=True)
 
     # Scheduled (second run)
     data = runtime_suggestions_by_percentile.suggested_runtimes(
-        route, percentiles, start_date, end_date, days_of_week, 1
+        route, percentiles, start_date, end_date, days_of_week, direction, 1
     )
     runtimes_to_csv(data, route, filename, write_header=False, add_blank_row=True)
 

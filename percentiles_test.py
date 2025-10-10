@@ -118,6 +118,8 @@ def make_timebands(grouped_runtimes):
         if i < len(grouped_runtimes) - 1:
             end_time = datetime.strptime(grouped_runtimes[i+1][0][0], time_format) - timedelta(minutes=6)
         else:
+            if(group[-1][0])=="24:00:00":
+                continue # miiight cause issues
             # If last group, just take last trip time + ~30 min buffer (adjust as needed)
             end_time = datetime.strptime(group[-1][0], time_format) + timedelta(minutes=30)
 
@@ -150,6 +152,6 @@ if __name__ == "__main__":
     percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) 
     grouped_timebands = group_timebands(percentile_runtimes)
     print(grouped_timebands)
-    
+
     new_timebands = make_timebands(grouped_timebands) # print(grouped_timebands, "\n", new_timebands)
     print(new_timebands)
