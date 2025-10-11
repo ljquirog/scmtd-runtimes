@@ -6,6 +6,28 @@ import percentiles_test
 import runtimes_to_csv
 from datetime import datetime, timedelta
 
+def diff_runtimes(scheduled, suggested):
+    """
+    Returns a diff matrix with the same structure as input:
+    [ ((timeband_start, timeband_end), {stop: diff, ...}), ... ]
+    where diff = scheduled - suggested
+    """
+    diff_data = []
+    for (tb_sched, vals_sched), (tb_sugg, vals_sugg) in zip(scheduled, suggested):
+        diff_dict = {}
+        for stop in vals_sched.keys():
+            val_sched = vals_sched.get(stop, 0)
+            val_sugg = vals_sugg.get(stop, 0)
+            # handle missing or None
+            try:
+                diff = val_sched - val_sugg
+            except TypeError:
+                diff = ""
+            diff_dict[stop] = diff
+        diff_data.append((tb_sched, diff_dict))
+    return diff_data
+
+
 def daterange(start_date, end_date):
     """Yield each date in the range [start_date, end_date]."""
     for n in range(int((end_date - start_date).days) + 1):
@@ -188,7 +210,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
 
     
 if __name__ == "__main__":
-    def_start, def_end = "09-11-2025", "09-24-2025"
+    def_start, def_end = "09-11-2025", "10-09-2025"
     default_wd, default_we = "1,2,3,4,5", "6,7"
 
     date_presets = {
@@ -250,14 +272,21 @@ if __name__ == "__main__":
     # route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-01-2025', '1,2,3,4,5', [30,40,50], 1
 
     # run suggested runtimes > file
+    # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
+    filename = f"route_{route}_suggested_runtimes.xlsx"
+    # Suggested
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
-    filename = f"route_{route}_suggested_runtimes.csv"
-    runtimes_to_csv.runtimes_to_csv(suggested, route, filename, write_header=True)
-
-    # run actual runtimes
+    
+    # Scheduled
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
-    runtimes_to_csv.runtimes_to_csv(scheduled, route, filename, write_header=False, add_blank_row=True)
 
+    # Diff scheduled - suggested  
+    diff_data = diff_runtimes(scheduled, suggested)
+    
+    # End to End
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
-    print(end_to_end, type(end_to_end))
-    runtimes_to_csv.runtimes_to_csv(end_to_end, route, filename, write_header=False, add_blank_row=True)
+    
+    runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
+    runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Scheduled - Suggested",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 90th ",write_header=False,add_blank_row=True)
