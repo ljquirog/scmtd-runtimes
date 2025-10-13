@@ -210,7 +210,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
 
     
 if __name__ == "__main__":
-    def_start, def_end = "09-11-2025", "10-09-2025"
+    def_start, def_end = "09-11-2025", "10-12-2025"
     default_wd, default_we = "1,2,3,4,5", "6,7"
 
     date_presets = {
