@@ -304,7 +304,7 @@ if __name__ == "__main__":
     
     wb.save(filename)
     
-    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
+    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
     diff_data = diff_runtimes(scheduled, suggested)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
