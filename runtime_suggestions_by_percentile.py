@@ -5,6 +5,10 @@ import json_to_file
 import percentiles_test
 import runtimes_to_csv
 from datetime import datetime, timedelta
+from openpyxl import Workbook, load_workbook
+from openpyxl.utils import get_column_letter
+import os
+
 
 def diff_runtimes(scheduled, suggested):
     """
@@ -282,17 +286,27 @@ if __name__ == "__main__":
         dow = 'MWF'
     
     filename = f"route_{route}_{dow}_suggested_runtimes.xlsx"
-
-    # Suggested
-    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
+    # Check if workbook exists; otherwise create new
+    if os.path.exists(filename):
+        wb = load_workbook(filename)
+        ws = wb.active
+    else:
+        wb = Workbook()
+        ws = wb.active
     
-    # Scheduled
+    ws.append([f"Dates ran for: {start_date} to {end_date}"])
+
+    print(direction)
+    if direction == "0":
+        ws.append(["Outbound"])
+    else:
+        ws.append(["Inbound"])
+    
+    wb.save(filename)
+    
+    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
-
-    # Diff scheduled - suggested  
     diff_data = diff_runtimes(scheduled, suggested)
-    
-    # End to End
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     
     runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)

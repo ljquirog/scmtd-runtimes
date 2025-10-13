@@ -5,12 +5,12 @@ import os
 
 def runtimes_to_excel(data, route, filename, label=None, percentiles=None, write_header=True, add_blank_row=False):
     # Check if workbook exists; otherwise create new
-    if os.path.exists(filename):
-        wb = load_workbook(filename)
-        ws = wb.active
-    else:
-        wb = Workbook()
-        ws = wb.active
+    # if os.path.exists(filename):
+    wb = load_workbook(filename)
+    ws = wb.active
+    # else:
+    #     wb = Workbook()
+    #     ws = wb.active
 
     # Add a blank row if needed
     if add_blank_row:
