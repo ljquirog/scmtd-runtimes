@@ -112,16 +112,18 @@ def make_timebands(grouped_runtimes):
 
     for i, group in enumerate(grouped_runtimes):
         # Start time = first trip time - 5 min
-        if group[0][0] == "24:00:00":
+
+        # skip if trip is at or after midnight
+        if group[0][0].startswith("24"):
             continue
         start_time = datetime.strptime(group[0][0], time_format) - timedelta(minutes=5)
         # End time = next group's first trip - 6 min, unless it's the last group
         if i < len(grouped_runtimes) - 1:
-            if grouped_runtimes[i+1][0][0] == "24:00:00":
+            if grouped_runtimes[i+1][0][0].startswith("24"):
                 continue
             end_time = datetime.strptime(grouped_runtimes[i+1][0][0], time_format) - timedelta(minutes=6)
         else:
-            if group[-1][0]=="24:00:00":
+            if group[-1][0].startswith("24"):
                 continue
             # If last group, just take last trip time + ~30 min buffer (adjust as needed)
             end_time = datetime.strptime(group[-1][0], time_format) + timedelta(minutes=30)
