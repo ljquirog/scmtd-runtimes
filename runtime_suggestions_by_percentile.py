@@ -211,7 +211,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     
 if __name__ == "__main__":
     def_start, def_end = "09-11-2025", "10-12-2025"
-    default_wd, default_we = "1,2,3,4,5", "6,7"
+    wd, we = "1,2,3,4,5", "6,7"
 
     date_presets = {
         "default_s": def_start,
@@ -219,8 +219,8 @@ if __name__ == "__main__":
     }
 
     dow_presets = {
-        "default_wd": default_wd,
-        "default_we": default_we,
+        "default_wd": wd,
+        "default_we": we,
     }
 
     # Ask for start & end date
@@ -244,15 +244,15 @@ if __name__ == "__main__":
     days_of_week = input(
         f"* Day of week\n"
         f"** Format: '1,2,3,4,5,6,7'\n"
-        f"Press Enter for default (weekday={default_wd}), "
-        f"or type 'default_wd' / 'default_we': "
+        f"Press Enter for default (weekday={wd}), "
+        f"or type 'wd' / 'we': "
     ).strip()
 
     if days_of_week:
         days_of_week = dow_presets.get(days_of_week, days_of_week)
     else:
         # Blank input → default weekdays
-        days_of_week = default_wd
+        days_of_week = wd
 
     route = input("* Route: ")
     direction = input("* Direction (0=outbound, 1=inbound): ")
@@ -273,7 +273,16 @@ if __name__ == "__main__":
 
     # run suggested runtimes > file
     # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
-    filename = f"route_{route}_suggested_runtimes.xlsx"
+    dow = "wd"
+    if days_of_week == we:
+        dow = "we"        
+    elif days_of_week == "2,4":
+        dow="TTH"
+    elif days_of_week == "1,3,5":
+        dow = 'MWF'
+    
+    filename = f"route_{route}_{dow}_suggested_runtimes.xlsx"
+
     # Suggested
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     
