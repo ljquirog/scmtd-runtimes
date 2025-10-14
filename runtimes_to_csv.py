@@ -19,75 +19,16 @@ def runtimes_to_excel(data, route, filename, label=None, percentiles=None, write
     # Section label (e.g. "Suggested Runtimes")
     if label:
         ws.append([label])
-
-    # if percentiles:
-    #     # Build header row
-    #     header = ["Percentile per Timepoint", "Timepoint"] + [f"{tb[0]} – {tb[1]}" for tb, _ in data]
-    #     ws.append(header)
-    # else:
-    #     header = ["","Timepoint"] + [f"{tb[0]} - {tb[1]}" for tb,_ in data]
-    #     ws.append(header)
     
-    # # assume all dicts share same keys
-    timepoints = list(data[0][1].keys())
-
-    # if percentiles:
-    #     # loop through percentiles + total
-    #     for i in range(len(percentiles) + 1):
-    #         percentile_label = f"{percentiles[i]}" if i < len(percentiles) else "total"
-    #         for tp_label, runtimes in data:
-    #             # Convert tuple like ('07:15:00', '11:14:00') into a readable string
-    #             if isinstance(tp_label, tuple):
-    #                 tp_label = f"{tp_label[0]} – {tp_label[1]}"
-
-    #             row = [percentile_label, tp_label]
-    #             for tp in timepoints:
-    #                 row.append(runtimes.get(tp, ""))
-    #             ws.append(row)
-
-            
-
-    #         # ws.append(row)
-    # else:
-    #     # no percentiles — just write stops as rows
-    #     for tp in timepoints:
-    #         row = ["", tp]
-    #         for _, runtimes in data:
-    #             row.append(runtimes.get(tp, ""))
-    #         ws.append(row)
-        # assume all dicts share same keys (including 'total' as last key)
-    # header
     if percentiles:
         header = ["Percentile/Timepoint", "Timepoint"] + [f"{tb[0]} – {tb[1]}" for tb, _ in data]
     else:
         header = ["", "Timepoint"] + [f"{tb[0]} – {tb[1]}" for tb, _ in data]
     ws.append(header)
 
-    # # ---- PERCENTILE MODE ----
-    # if percentiles:
-    #     # include total after the percentiles
-    #     all_percentiles = percentiles + ["total"]
 
-    #     for p in all_percentiles:
-    #         percentile_label = str(p)
-    #         ws.append([percentile_label])
-    #         # for tp in timepoints:
-    #         #     # first two columns: percentile + timepoint
-    #         #     row = []
-    #         #     # fill rest with runtimes across all timebands
-    #         #     for _, runtimes in data:
-    #         #         row.append(runtimes.get(tp, ""))
-    #         #     ws.append(row)
-
-    # # ---- NORMAL MODE ----
-    # else:
-    #     for tp in timepoints:
-    #         row = ["", tp]
-    #         for _, runtimes in data:
-    #             row.append(runtimes.get(tp, ""))
-    #         ws.append(row)
-
-    # wb.save(filename)
+    # assume all dicts share same keys
+    timepoints = list(data[0][1].keys())
 
     if percentiles:
         all_percentiles = percentiles + ["total"]

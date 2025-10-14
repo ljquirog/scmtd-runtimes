@@ -233,75 +233,75 @@ def get_end_to_end_diff(end_to_end, suggested):
 
     
 if __name__ == "__main__":
-    # def_start, def_end = "09-11-2025", "10-12-2025"
-    # wd, we = "1,2,3,4,5", "6,7"
+    def_start, def_end = "09-11-2025", "10-12-2025"
+    wd, we = "1,2,3,4,5", "6,7"
 
-    # date_presets = {
-    #     "default_s": def_start,
-    #     "default_e": def_end,
-    # }
+    date_presets = {
+        "default_s": def_start,
+        "default_e": def_end,
+    }
 
-    # dow_presets = {
-    #     "default_wd": wd,
-    #     "default_we": we,
-    # }
+    dow_presets = {
+        "default_wd": wd,
+        "default_we": we,
+    }
 
-    # # Ask for start & end date
-    # raw_dates = input(
-    #     f"* Start date and end date\n"
-    #     f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
-    #     f"Press Enter for default ({def_start} to {def_end}), "
-    #     f"or use 'default_s' / 'default_e': "
-    # ).strip()
+    # Ask for start & end date
+    raw_dates = input(
+        f"* Start date and end date\n"
+        f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
+        f"Press Enter for default ({def_start} to {def_end}), "
+        f"or use 'default_s' / 'default_e': "
+    ).strip()
 
-    # if raw_dates:
-    #     start_date, end_date = raw_dates.split()
-    #     # Replace presets if typed
-    #     start_date = date_presets.get(start_date, start_date)
-    #     end_date   = date_presets.get(end_date, end_date)
-    # else:
-    #     # Blank input → full defaults
-    #     start_date, end_date = def_start, def_end
+    if raw_dates:
+        start_date, end_date = raw_dates.split()
+        # Replace presets if typed
+        start_date = date_presets.get(start_date, start_date)
+        end_date   = date_presets.get(end_date, end_date)
+    else:
+        # Blank input → full defaults
+        start_date, end_date = def_start, def_end
 
-    # # Ask for days of week
-    # days_of_week = input(
-    #     f"* Day of week\n"
-    #     f"** Format: '1,2,3,4,5,6,7'\n"
-    #     f"Press Enter for default (weekday={wd}), "
-    #     f"or type 'wd' / 'we': "
-    # ).strip()
+    # Ask for days of week
+    days_of_week = input(
+        f"* Day of week\n"
+        f"** Format: '1,2,3,4,5,6,7'\n"
+        f"Press Enter for default (weekday={wd}), "
+        f"or type 'wd' / 'we': "
+    ).strip()
 
-    # if days_of_week:
-    #     days_of_week = dow_presets.get(days_of_week, days_of_week)
-    # else:
-    #     # Blank input → default weekdays
-    #     days_of_week = wd
+    if days_of_week:
+        days_of_week = dow_presets.get(days_of_week, days_of_week)
+    else:
+        # Blank input → default weekdays
+        days_of_week = wd
 
-    # route = input("* Route: ")
-    # direction = input("* Direction (0=outbound, 1=inbound): ")
-    # length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-    # print(f"\n> Route {route} has {length} timepoints:")
-    # for tp in timepoints:
-    #     print(">> ", tp)
+    route = input("* Route: ")
+    direction = input("* Direction (0=outbound, 1=inbound): ")
+    length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
+    print(f"\n> Route {route} has {length} timepoints:")
+    for tp in timepoints:
+        print(">> ", tp)
     
-    # if length == 0:
-    #     raise ValueError("Timepoint calculation failed; route has 0 timepoints")
+    if length == 0:
+        raise ValueError("Timepoint calculation failed; route has 0 timepoints")
     
-    # percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
+    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
 
-    # percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    percentiles = [int(x.strip()) for x in percentiles.split(",")]
 
     
-    route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
+    # route, start_date, end_date, days_of_week, percentiles, direction = '73', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
 
     # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     dow = "wd"
-    # if days_of_week == we:
-    #     dow = "we"        
-    # elif days_of_week == "2,4":
-    #     dow="TTH"
-    # elif days_of_week == "1,3,5":
-        # dow = 'MWF'
+    if days_of_week == we:
+        dow = "we"        
+    elif days_of_week == "2,4":
+        dow="TTH"
+    elif days_of_week == "1,3,5":
+        dow = 'MWF'
     
     filename = f"route_{route}_{dow}_suggested_runtimes.xlsx"
     # Check if workbook exists; otherwise create new
