@@ -18,7 +18,12 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week, d
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
     with open('routeStats.json', "r") as file:
         route_stats = json.load(file)    
+    # === Sort the list by scheduledTripStartTime ===
+    route_stats["pathStats"].sort(key=lambda x: x["scheduledTripStartTime"])
 
+    # === Write the sorted JSON back ===
+    with open("routeStats.json", "w", encoding="utf-8") as file:
+        json.dump(route_stats, file, indent=2, ensure_ascii=False)
     # gets the runtimes for a route based on percentile (observed) and schedule, respectively.
     # stop, runtime pair for each timepoint, with the total runtime at the end of list
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(route_stats) 
@@ -28,7 +33,7 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week, d
     return new_timebands
 
 if __name__ == "__main__":
-    # e.g. [1,2] 60 03-13-2025 06-18-2025 '1,2,3,4,5' 1 0
+    # e.g. 34 60 09-11-2025 10-12-2025 '1,2,3,4,5' 1 0
     route, percentile, start_date, end_date, days_of_week, direction, export_csv = input(
     "provide the following information, each variable separated by a space:\n" \
         "route - format: string \n\t" \

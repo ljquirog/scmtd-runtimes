@@ -71,7 +71,7 @@ def runtime_per_trip(route_stats):
     Returns:
         list: A list of groups, where each group is a list of (time, runtime) tuples.
 """
-def group_timebands(percentile_runtimes, threshold=3):
+def group_timebands(percentile_runtimes, threshold=5):
     grouped = [] # final list of groups
     current_group = []
     current_min = current_max = None # track max and min runtime in current group
@@ -142,7 +142,7 @@ def make_timebands(grouped_runtimes):
     return timebands
    
 if __name__ == "__main__":
-    route, percentile, start, end, dow, dir = 11, 60, "06-19-2025", "09-19-2025", "1,2,3,4,5", 1
+    route, percentile, start, end, dow, dir = 34, 60, "09-11-2025", "10-12-2025", "1,2,3,4,5", 1
     # if len(sys.argv) > 1:
     #     route = sys.argv[1]
     #     percentile = sys.argv[2]
@@ -151,8 +151,13 @@ if __name__ == "__main__":
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
 
     with open('routeStats.json', "r") as file:
-        route_stats = json.load(file)
-    
+        route_stats = json.load(file)    
+    # === Sort the list by scheduledTripStartTime ===
+    route_stats["pathStats"].sort(key=lambda x: x["scheduledTripStartTime"])
+
+    # === Write the sorted JSON back ===
+    with open("routeStats.json", "w", encoding="utf-8") as file:
+        json.dump(route_stats, file, indent=2, ensure_ascii=False)
     
     percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) 
     grouped_timebands = group_timebands(percentile_runtimes)
