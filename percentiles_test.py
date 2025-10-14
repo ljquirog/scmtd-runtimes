@@ -53,7 +53,7 @@ def runtime_per_trip(route_stats):
 
         # skip any key that's 'total' to avoid adding to itself
         total = sum(runtime for key, runtime in stops.items() if key != total)
-        
+        print("Trip time: ", trip_time, "\nStops:", stops)
         # rebuild dict so 'total' always comes last
         percentile_runtimes[trip_time] = {
             # make a new key value pair for each key value in the dict, only if its not total
@@ -142,10 +142,7 @@ def make_timebands(grouped_runtimes):
     return timebands
    
 if __name__ == "__main__":
-    route, percentile, start, end, dow, dir = 34, 60, "09-11-2025", "10-12-2025", "1,2,3,4,5", 1
-    # if len(sys.argv) > 1:
-    #     route = sys.argv[1]
-    #     percentile = sys.argv[2]
+    route, percentile, start, end, dow, dir = 20, 60, "09-11-2025", "10-12-2025", "1,2,3,4,5", 1
     
     route_stats_json = api_request.call(route, percentile, start, end, dow, dir)
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
@@ -160,8 +157,12 @@ if __name__ == "__main__":
         json.dump(route_stats, file, indent=2, ensure_ascii=False)
     
     percentile_runtimes, schedule_runtimes = runtime_per_trip(route_stats) 
-    grouped_timebands = group_timebands(percentile_runtimes)
-    print(grouped_timebands)
+    percentile_grouped_timebands = group_timebands(percentile_runtimes)
+    new_timebands = make_timebands(percentile_grouped_timebands) 
 
-    new_timebands = make_timebands(grouped_timebands) # print(grouped_timebands, "\n", new_timebands)
-    print(new_timebands)
+    schedule_grouped_timebands = group_timebands(schedule_runtimes)
+    base_timebands = make_timebands(schedule_grouped_timebands)
+
+
+    print(f"grouped timebands, by 60th percentile end-to-end: \n{percentile_grouped_timebands}\nnew timebands: \n{new_timebands}\nbase timebands (roughly): \n{base_timebands}\n")
+

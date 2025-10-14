@@ -46,12 +46,20 @@ def get_route_stats(route, percentile, start_date, end_date, days_of_week, direc
     json_to_file.txt_convert('routeStats.json', route_stats_json)  
     
     with open('routeStats.json', "r") as file:
-        return json.load(file)
+        route_stats = json.load(file)    
+    # === Sort the list by scheduledTripStartTime ===
+    route_stats["pathStats"].sort(key=lambda x: x["scheduledTripStartTime"])
+
+    # === Write the sorted JSON back ===
+    with open("routeStats.json", "w", encoding="utf-8") as file:
+        json.dump(route_stats, file, indent=2, ensure_ascii=False)
+    
     
 def get_num_timepoints(route, start, end, dow, direction):
     length, timepoints = 0, []
     fixed_route_stats = get_route_stats(route, 60, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(fixed_route_stats)
+    print(percentile_runtimes)
     for trip_time, stops in percentile_runtimes.items():
         
         # Make sure user provided the right number of percentiles
