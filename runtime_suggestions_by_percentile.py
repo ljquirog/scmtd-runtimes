@@ -47,6 +47,7 @@ def get_route_stats(route, percentile, start_date, end_date, days_of_week, direc
     
     with open('routeStats.json', "r") as file:
         route_stats = json.load(file)    
+    
     # === Sort the list by scheduledTripStartTime ===
     route_stats["pathStats"].sort(key=lambda x: x["scheduledTripStartTime"])
 
@@ -54,6 +55,7 @@ def get_route_stats(route, percentile, start_date, end_date, days_of_week, direc
     with open("routeStats.json", "w", encoding="utf-8") as file:
         json.dump(route_stats, file, indent=2, ensure_ascii=False)
     
+    return route_stats
     
 def get_num_timepoints(route, start, end, dow, direction):
     length, timepoints = 0, []
@@ -220,78 +222,86 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
 
     return suggested
 
+def get_end_to_end_diff(end_to_end, suggested):
+    differences = []
+    for ((start_s, end_s), sugg_data), ((start_e, end_e), end_data) in zip(suggested, end_to_end):
+        sugg_total = sugg_data.get("total", 0)
+        end_total = end_data.get("total", 0)
+        diff = end_total - sugg_total
+        differences.append(((start_s, end_s), {"total": diff}))
+    return differences
+
     
 if __name__ == "__main__":
-    def_start, def_end = "09-11-2025", "10-12-2025"
-    wd, we = "1,2,3,4,5", "6,7"
+    # def_start, def_end = "09-11-2025", "10-12-2025"
+    # wd, we = "1,2,3,4,5", "6,7"
 
-    date_presets = {
-        "default_s": def_start,
-        "default_e": def_end,
-    }
+    # date_presets = {
+    #     "default_s": def_start,
+    #     "default_e": def_end,
+    # }
 
-    dow_presets = {
-        "default_wd": wd,
-        "default_we": we,
-    }
+    # dow_presets = {
+    #     "default_wd": wd,
+    #     "default_we": we,
+    # }
 
-    # Ask for start & end date
-    raw_dates = input(
-        f"* Start date and end date\n"
-        f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
-        f"Press Enter for default ({def_start} to {def_end}), "
-        f"or use 'default_s' / 'default_e': "
-    ).strip()
+    # # Ask for start & end date
+    # raw_dates = input(
+    #     f"* Start date and end date\n"
+    #     f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
+    #     f"Press Enter for default ({def_start} to {def_end}), "
+    #     f"or use 'default_s' / 'default_e': "
+    # ).strip()
 
-    if raw_dates:
-        start_date, end_date = raw_dates.split()
-        # Replace presets if typed
-        start_date = date_presets.get(start_date, start_date)
-        end_date   = date_presets.get(end_date, end_date)
-    else:
-        # Blank input → full defaults
-        start_date, end_date = def_start, def_end
+    # if raw_dates:
+    #     start_date, end_date = raw_dates.split()
+    #     # Replace presets if typed
+    #     start_date = date_presets.get(start_date, start_date)
+    #     end_date   = date_presets.get(end_date, end_date)
+    # else:
+    #     # Blank input → full defaults
+    #     start_date, end_date = def_start, def_end
 
-    # Ask for days of week
-    days_of_week = input(
-        f"* Day of week\n"
-        f"** Format: '1,2,3,4,5,6,7'\n"
-        f"Press Enter for default (weekday={wd}), "
-        f"or type 'wd' / 'we': "
-    ).strip()
+    # # Ask for days of week
+    # days_of_week = input(
+    #     f"* Day of week\n"
+    #     f"** Format: '1,2,3,4,5,6,7'\n"
+    #     f"Press Enter for default (weekday={wd}), "
+    #     f"or type 'wd' / 'we': "
+    # ).strip()
 
-    if days_of_week:
-        days_of_week = dow_presets.get(days_of_week, days_of_week)
-    else:
-        # Blank input → default weekdays
-        days_of_week = wd
+    # if days_of_week:
+    #     days_of_week = dow_presets.get(days_of_week, days_of_week)
+    # else:
+    #     # Blank input → default weekdays
+    #     days_of_week = wd
 
-    route = input("* Route: ")
-    direction = input("* Direction (0=outbound, 1=inbound): ")
-    length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-    print(f"\n> Route {route} has {length} timepoints:")
-    for tp in timepoints:
-        print(">> ", tp)
+    # route = input("* Route: ")
+    # direction = input("* Direction (0=outbound, 1=inbound): ")
+    # length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
+    # print(f"\n> Route {route} has {length} timepoints:")
+    # for tp in timepoints:
+    #     print(">> ", tp)
     
-    if length == 0:
-        raise ValueError("Timepoint calculation failed; route has 0 timepoints")
+    # if length == 0:
+    #     raise ValueError("Timepoint calculation failed; route has 0 timepoints")
     
-    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
+    # percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
 
-    percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    # percentiles = [int(x.strip()) for x in percentiles.split(",")]
 
     
-    # route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-01-2025', '1,2,3,4,5', [30,40,50], 1
+    route, start_date, end_date, days_of_week, percentiles, direction = '11', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
 
-    # run suggested runtimes > file
     # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     dow = "wd"
-    if days_of_week == we:
-        dow = "we"        
-    elif days_of_week == "2,4":
-        dow="TTH"
-    elif days_of_week == "1,3,5":
-        dow = 'MWF'
+    # if days_of_week == we:
+    #     dow = "we"        
+    # elif days_of_week == "2,4":
+    #     dow="TTH"
+    # elif days_of_week == "1,3,5":
+        # dow = 'MWF'
     
     filename = f"route_{route}_{dow}_suggested_runtimes.xlsx"
     # Check if workbook exists; otherwise create new
@@ -304,7 +314,6 @@ if __name__ == "__main__":
     
     ws.append([f"Dates ran for: {start_date} to {end_date}"])
 
-    print(direction)
     if direction == "0":
         ws.append(["Outbound"])
     else:
@@ -314,10 +323,14 @@ if __name__ == "__main__":
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
-    diff_data = diff_runtimes(scheduled, suggested)
+    diff_data = diff_runtimes(suggested, scheduled)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
-    
+    diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
+
+    print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
+
     runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
     runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Scheduled - Suggested",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 90th ",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 90th percentile runtime",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 90th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
