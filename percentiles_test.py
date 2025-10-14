@@ -17,7 +17,10 @@ def runtime_per_trip(route_stats):
             continue
 
         # initialize vars
-        scheduled_mins, percentile_mins, trip_start_time, stop_name = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime'], trip['fromStop']['name']  
+        scheduled_mins, percentile_mins, trip_start_time = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime']
+        
+        stop_name = f"{trip['fromStop']['name']} → {trip['toStop']['name']}"
+
         
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:
@@ -34,11 +37,7 @@ def runtime_per_trip(route_stats):
         total = 0
 
         # skip any key that's 'total' to avoid adding to itself
-        total = sum(runtime for key, runtime in stops.items() if key != total)
-        # for key, runtime in stops.items():
-        #     if key == "total":
-        #         continue
-        #     total += runtime
+        total = sum(runtime for key, runtime in stops.items() if key != "total")
         
         # rebuild dict so 'total' always comes last
         scheduled_runtimes[trip_time] = {
@@ -52,7 +51,7 @@ def runtime_per_trip(route_stats):
         total = 0
 
         # skip any key that's 'total' to avoid adding to itself
-        total = sum(runtime for key, runtime in stops.items() if key != total)
+        total = sum(runtime for key, runtime in stops.items() if key != "total")
         print("Trip time: ", trip_time, "\nStops:", stops)
         # rebuild dict so 'total' always comes last
         percentile_runtimes[trip_time] = {
