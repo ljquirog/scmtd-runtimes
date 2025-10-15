@@ -120,6 +120,56 @@ def end_to_end_runtimes(route, start, end, dow, direction):
     
     print(suggested)
     return suggested
+
+def sched_end_to_end_runtimes(route, start, end, dow, direction):
+    print("END TO END RUNTIMES")
+    # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
+    print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
+    base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
+    percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
+
+    grouped_timebands = percentiles_test.group_timebands(schedule_runtimes, 1) # groups trips if runtimes are within threshold
+    new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
+
+    base_route_stats = get_route_stats(route, 90, start, end, dow, direction)
+    percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
+    
+
+    # === STEP 2: Run end-to-end percentile runtimes per trip ===
+    print("\n=== STEP 2: Run end-to-end percentile runtimes per trip ===")
+    runtimes_90 = {"total": {}}
+    for trip_time, stops in schedule_runtimes.items():
+        runtimes_90["total"][trip_time] = stops["total"]
+    # print(runtimes_90)
+
+    # === STEP 3: Aggregate runtimes per timeband ===
+    print("\n=== STEP 4: Aggregate runtimes per timeband ===")
+
+    suggested = []
+    for j, (timeband_range, _) in enumerate(new_timebands):
+        tb_start, tb_end = timeband_range
+        agg = {}
+        print(f"\nTimeband {tb_start} - {tb_end}")
+
+        # For each timepoint, look at all trips inside this timeband group
+        for total in runtimes_90:
+            new_runtimes = []
+
+            for trip_time, _ in grouped_timebands[j]:
+                if trip_time in runtimes_90[total]:
+                    new_runtimes.append(runtimes_90[total][trip_time])  # append all days
+
+            if new_runtimes:
+                avg_val = math.ceil(sum(new_runtimes) / len(new_runtimes))
+                agg[total] = avg_val
+                print(f"  → Avg across {len(new_runtimes)} values for {total}: {avg_val}")
+
+        agg["total"] = sum(agg.values())
+        print(f"  → Total runtime for timeband: {agg['total']}")
+        suggested.append(((tb_start, tb_end), agg))   
+    
+    print(suggested)
+    return suggested
     
 
 
@@ -321,11 +371,19 @@ if __name__ == "__main__":
     
     wb.save(filename)
     
+    # base_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
+    # percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
+
+    # schedule_grouped_timebands = percentiles_test.group_timebands(schedule_runtimes)
+    # base_timebands = percentiles_test.make_timebands(schedule_grouped_timebands)
+    base_timebands = sched_end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
+
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
     diff_data = diff_runtimes(suggested, scheduled)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
+    
 
     print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
@@ -334,3 +392,4 @@ if __name__ == "__main__":
     runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 90th percentile runtime",write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 90th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Base End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)
