@@ -346,7 +346,7 @@ if __name__ == "__main__":
     route = input("* Route: ")
     direction = input("* Direction (0=outbound, 1=inbound): ")
     length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-    print(f"\n> Route {route} has {length} timepoints:")
+    print(f"\n> Route {route} has {length} timepoints for dates {start_date} to {end_date}:")
     for tp in timepoints:
         print(">> ", tp)
     
@@ -354,10 +354,20 @@ if __name__ == "__main__":
         raise ValueError("Timepoint calculation failed; route has 0 timepoints")
     
     percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
-
     percentiles = [int(x.strip()) for x in percentiles.split(",")]
-
     
+    comp_length, comp_timepoints = get_num_timepoints(route, comp_start, comp_end, days_of_week, direction)
+    
+    if comp_length != length:
+        print(f"\n> Route {route} has {comp_length} timepoints for dates {comp_start} to {comp_end}:")
+        for tp in timepoints:
+            print(">> ", tp)
+        comp_percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
+        comp_percentiles = [int(x.strip()) for x in comp_percentiles.split(",")]
+    else:
+        comp_percentiles = percentiles
+
+
     # route, start_date, end_date, days_of_week, percentiles, direction = '73', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
 
     dow = "wd"
@@ -387,7 +397,7 @@ if __name__ == "__main__":
     wb.save(filename)
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
-    scheduled = suggested_runtimes(route, percentiles, comp_start, comp_end, days_of_week, direction, 1)
+    scheduled = suggested_runtimes(route, comp_percentiles, comp_start, comp_end, days_of_week, direction, 1)
     diff_data = diff_runtimes(suggested, scheduled)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
@@ -396,6 +406,10 @@ if __name__ == "__main__":
     print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
     runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
+    wb = load_workbook(filename)
+    ws = wb.active
+    ws.append([f"Dates ran for: {comp_start} to {comp_end}"])
+    wb.save(filename)
     runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
