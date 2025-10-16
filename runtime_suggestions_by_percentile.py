@@ -289,75 +289,75 @@ if __name__ == "__main__":
     def_start, def_end = "09-11-2025", "10-12-2025"
     wd, we = "1,2,3,4,5", "6,7"
 
-    date_presets = {
-        "ds": def_start,
-        "de": def_end,
-    }
+    # date_presets = {
+    #     "ds": def_start,
+    #     "de": def_end,
+    # }
 
-    dow_presets = {
-        "default_wd": wd,
-        "default_we": we,
-    }
+    # dow_presets = {
+    #     "default_wd": wd,
+    #     "default_we": we,
+    # }
 
-    # Ask for start & end date
-    raw_dates = input(
-        f"* Start date and end date\n"
-        f"** Format: MM-DD-YYYY MM-DD-YYYY\n"
-        f"Press Enter for default ({def_start} to {def_end}), "
-        f"or use 'ds' / 'de': "
-    ).strip()
+    # # Ask for start & end date
+    # raw_dates = input(
+    #     f"* Start date and end date\n"
+    #     f"** Format: MM-DD-YYYY MM-DD-YYYY\n"
+    #     f"Press Enter for default ({def_start} to {def_end}), "
+    #     f"or use 'ds' / 'de': "
+    # ).strip()
 
-    # Ask for start and end date to compare it to
-    compare_dates = input(
-        f"* Comparing: Start date and end date\n"
-        f"** Format: MM-DD-YYYY MM-DD-YYYY\n"
-        f"Press Enter for default ({def_start} to {def_end}), "
-        f"or use 'ds' / 'de': "
-    ).strip()
+    # # Ask for start and end date to compare it to
+    # compare_dates = input(
+    #     f"* Comparing: Start date and end date\n"
+    #     f"** Format: MM-DD-YYYY MM-DD-YYYY\n"
+    #     f"Press Enter for default ({def_start} to {def_end}), "
+    #     f"or use 'ds' / 'de': "
+    # ).strip()
 
-    if compare_dates:
-        comp_start, comp_end = compare_dates.split()
-        # Replace presets if typed
-        comp_start = date_presets.get(comp_start, comp_start)
-        comp_end   = date_presets.get(comp_end, comp_end)
-    else:
-        comp_start, comp_end = def_start, def_end
+    # if compare_dates:
+    #     comp_start, comp_end = compare_dates.split()
+    #     # Replace presets if typed
+    #     comp_start = date_presets.get(comp_start, comp_start)
+    #     comp_end   = date_presets.get(comp_end, comp_end)
+    # else:
+    #     comp_start, comp_end = def_start, def_end
 
-    if raw_dates:
-        start_date, end_date = raw_dates.split()
-        # Replace presets if typed
-        start_date = date_presets.get(start_date, start_date)
-        end_date   = date_presets.get(end_date, end_date)
-    else:
-        # Blank input → full defaults
-        start_date, end_date = def_start, def_end
+    # if raw_dates:
+    #     start_date, end_date = raw_dates.split()
+    #     # Replace presets if typed
+    #     start_date = date_presets.get(start_date, start_date)
+    #     end_date   = date_presets.get(end_date, end_date)
+    # else:
+    #     # Blank input → full defaults
+    #     start_date, end_date = def_start, def_end
 
-    # Ask for days of week
-    days_of_week = input(
-        f"* Day of week\n"
-        f"** Format: '1,2,3,4,5,6,7'\n"
-        f"Press Enter for default (weekday={wd}), "
-        f"or type 'wd' / 'we': "
-    ).strip()
+    # # Ask for days of week
+    # days_of_week = input(
+    #     f"* Day of week\n"
+    #     f"** Format: '1,2,3,4,5,6,7'\n"
+    #     f"Press Enter for default (weekday={wd}), "
+    #     f"or type 'wd' / 'we': "
+    # ).strip()
 
-    if days_of_week:
-        days_of_week = dow_presets.get(days_of_week, days_of_week)
-    else:
-        # Blank input → default weekdays
-        days_of_week = wd
+    # if days_of_week:
+    #     days_of_week = dow_presets.get(days_of_week, days_of_week)
+    # else:
+    #     # Blank input → default weekdays
+    #     days_of_week = wd
 
-    route = input("* Route: ")
-    direction = input("* Direction (0=outbound, 1=inbound): ")
-    length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-    print(f"\n> Route {route} has {length} timepoints for dates {start_date} to {end_date}:")
-    for tp in timepoints:
-        print(">> ", tp)
+    # route = input("* Route: ")
+    # direction = input("* Direction (0=outbound, 1=inbound): ")
+    # length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
+    # print(f"\n> Route {route} has {length} timepoints for dates {start_date} to {end_date}:")
+    # for tp in timepoints:
+    #     print(">> ", tp)
     
-    if length == 0:
-        raise ValueError("Timepoint calculation failed; route has 0 timepoints")
+    # if length == 0:
+    #     raise ValueError("Timepoint calculation failed; route has 0 timepoints")
     
-    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
-    percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    # percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
+    # percentiles = [int(x.strip()) for x in percentiles.split(",")]
     
     # comp_length, comp_timepoints = get_num_timepoints(route, comp_start, comp_end, days_of_week, direction)
     
@@ -370,8 +370,8 @@ if __name__ == "__main__":
     # else:
     #     comp_percentiles = percentiles
 
-    # comp_start, comp_end = '09-11-2025', '10-12-2025'
-    # route, start_date, end_date, days_of_week, percentiles, direction = '3B', '09-11-2025', '10-12-2025', '1,2,3,4,5', [45,60], 1
+    # comp_start, comp_end = '09-11-2025', '10-12-2025' '12-19-2024', '03-11-2025'
+    route, start_date, end_date, days_of_week, percentiles, direction = '20', '09-11-2025', '10-12-2025', '1,2,3,4,5', [30,35,40,45,50,55,60], 1
 
     dow = "wd"
     if days_of_week == we:
@@ -401,17 +401,17 @@ if __name__ == "__main__":
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
-    # print(suggested)
-    diff_data = diff_runtimes(suggested, scheduled)
-    end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
-    diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
-    base_timebands = sched_end_to_end_runtimes(route, comp_start, comp_end, days_of_week, direction)
+    print(suggested)
+    # diff_data = diff_runtimes(suggested, scheduled)
+    # end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
+    # diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
+    # base_timebands = sched_end_to_end_runtimes(route, comp_start, comp_end, days_of_week, direction)
 
     # print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
     runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
     runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 85th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Fall End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 85th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Fall End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)

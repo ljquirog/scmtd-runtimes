@@ -1,1141 +1,107 @@
 {
   "pathStats": [
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 540,
-      "scheduledTripStartTime": "06:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "540.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 733.474609375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 9
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "06:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "780.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 712.306640625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 13
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 720,
+      "scheduledRuntimeSeconds": 480,
       "scheduledTripStartTime": "07:00:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "720.0"
+            "480.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 799.580078125
+          "value": 630.236328125
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
         "gtfsStopSequence": 1,
-        "code": 1659,
+        "code": 2754,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 12
+      "scheduledRuntimeMinutes": 8
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 900,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 120,
       "scheduledTripStartTime": "07:00:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "120.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 892.140625
+          "value": 162.8203125
         }
       ],
       "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
+        "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 2
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "07:50:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1017.076171875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "07:50:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1142.3671875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "09:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 930.58203125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "09:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1014.5078125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "10:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 906.23828125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "10:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 956.390625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "11:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 943.12109375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "11:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1062.8203125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "12:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1037.15625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "12:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1085.5546875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "13:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 934.61328125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "13:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 990.08984375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "14:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1128.91015625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "14:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1087.4375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "15:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1088.05078125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "15:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1128.94140625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "16:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1104.28125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "16:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1073.828125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "17:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1086.46875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "17:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 1073.5390625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 21,
       "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "18:00:00",
+      "scheduledTripStartTime": "07:00:00",
       "aggregates": [
         {
           "type": "list",
@@ -1148,26 +114,26 @@
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 983.83984375
+          "value": 718.140625
         }
       ],
       "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
+        "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -1176,13 +142,1799 @@
       "scheduledRuntimeMinutes": 11
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "07:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 383.00390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 240,
+      "scheduledTripStartTime": "07:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "240.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 290.634765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 4
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "07:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 845.171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 960,
+      "scheduledTripStartTime": "07:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "960.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 839.16015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 16
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 666.52734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 157.0859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 794.578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 420,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "420.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 399.75390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 7
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 240,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "240.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 246.31640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 4
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "840.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 865.451171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 14
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 897.150390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 766.564453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 166.31640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "840.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 832.529296875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 14
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 395.63671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 240,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "240.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 354.130859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 4
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 913.806640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 1200,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1200.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 895.82421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 20
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 720.80078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 120,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "120.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 185.26171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 2
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 831.546875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 406.859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 295.64453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 960.34765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 17,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 928.0078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 724.40625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 174.6015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 960,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "960.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 836.80078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 16
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 447.11328125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 361.6875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 960,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "960.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 986.4921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 16
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "10:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 959.75390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "11:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 662.3984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "11:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 166.91796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "11:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 760.5078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 420,
+      "scheduledTripStartTime": "11:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "420.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 421.9609375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 7
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 240,
+      "scheduledTripStartTime": "11:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "240.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 336.671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 4
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 960,
+      "scheduledTripStartTime": "11:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "960.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 985.67578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 16
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 22,
       "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "18:00:00",
+      "scheduledTripStartTime": "11:25:00",
       "aggregates": [
         {
           "type": "list",
@@ -1195,25 +1947,25 @@
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 786.8046875
+          "value": 885.2734375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
+        "stopPathIndex": 63,
         "name": "Front & Soquel Ave",
         "id": "1594",
-        "gtfsStopSequence": 33,
+        "gtfsStopSequence": 64,
         "code": 2667,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
@@ -1223,13 +1975,154 @@
       "scheduledRuntimeMinutes": 19
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "12:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 703.11328125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 240,
+      "scheduledTripStartTime": "12:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "240.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 188.66796875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 4
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "12:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "840.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 831.3671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 14
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 22,
       "scheduledRuntimeSeconds": 480,
-      "scheduledTripStartTime": "19:00:00",
+      "scheduledTripStartTime": "12:25:00",
       "aggregates": [
         {
           "type": "list",
@@ -1242,26 +2135,26 @@
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 857.6171875
+          "value": 421.80078125
         }
       ],
       "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
+        "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -1270,248 +2163,342 @@
       "scheduledRuntimeMinutes": 8
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "19:00:00",
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "12:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "960.0"
+            "360.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 742.4609375
+          "value": 475.1328125
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
+        "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 16
+      "scheduledRuntimeMinutes": 6
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 480,
-      "scheduledTripStartTime": "20:00:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1200,
+      "scheduledTripStartTime": "12:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "480.0"
+            "1200.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 814.28125
+          "value": 1102.3125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 20
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "12:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1117.48046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "13:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 684.93359375
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
         "gtfsStopSequence": 1,
-        "code": 1659,
+        "code": 2754,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 8
+      "scheduledRuntimeMinutes": 9
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "20:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "960.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 683.59375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 16
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 480,
-      "scheduledTripStartTime": "21:00:00",
+      "scheduledRuntimeSeconds": 120,
+      "scheduledTripStartTime": "13:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "480.0"
+            "120.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 758.4609375
+          "value": 177.58984375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 8
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 2
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
       "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "21:00:00",
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "13:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "960.0"
+            "840.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 611.921875
+          "value": 751.0546875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
+        "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 16
+      "scheduledRuntimeMinutes": 14
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
-      "numObservedPaths": 17,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "13:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 370.15234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
       "scheduledRuntimeSeconds": 300,
-      "scheduledTripStartTime": "22:00:00",
+      "scheduledTripStartTime": "13:25:00",
       "aggregates": [
         {
           "type": "list",
@@ -1524,26 +2511,26 @@
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 735.359375
+          "value": 284.15625
         }
       ],
       "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
+        "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -1552,13 +2539,13 @@
       "scheduledRuntimeMinutes": 5
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
-      "numObservedPaths": 17,
+      "numObservedPaths": 22,
       "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "22:00:00",
+      "scheduledTripStartTime": "13:25:00",
       "aggregates": [
         {
           "type": "list",
@@ -1571,41 +2558,605 @@
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 617.1796875
+          "value": 934.71484375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 4,
+      "scheduledRuntimeSeconds": 1200,
+      "scheduledTripStartTime": "13:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1200.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 916.125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
         "name": "Front & Soquel Ave",
         "id": "1594",
-        "gtfsStopSequence": 33,
+        "gtfsStopSequence": 64,
         "code": 2667,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 20
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
-      "numObservedPaths": 18,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 694.25390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 170.5859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 887.125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 450.76171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 365.34375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1037.9453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1500,
+      "scheduledTripStartTime": "14:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1500.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1051.03515625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 25
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "15:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 688.63671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "15:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 157
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "15:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "840.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 929.8671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 14
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "15:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 386.94140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
       "scheduledRuntimeSeconds": 300,
-      "scheduledTripStartTime": "23:00:00",
+      "scheduledTripStartTime": "15:25:00",
       "aggregates": [
         {
           "type": "list",
@@ -1618,26 +3169,26 @@
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 707.984375
+          "value": 284.4296875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
+        "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -1646,51 +3197,1414 @@
       "scheduledRuntimeMinutes": 5
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "20",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
       "numScheduledPaths": 22,
-      "numObservedPaths": 18,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "23:00:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "15:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "1020.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 569.4296875
+          "value": 1026.57421875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1200,
+      "scheduledTripStartTime": "15:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1200.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1007.2890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
         "name": "Front & Soquel Ave",
         "id": "1594",
-        "gtfsStopSequence": 33,
+        "gtfsStopSequence": 64,
         "code": 2667,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 20
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 710.3984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 120,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "120.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 165.96484375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 2
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 893.09765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 434.671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 407.28515625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1380,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1380.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1118.0078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 23
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1260,
+      "scheduledTripStartTime": "16:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1260.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1040.40234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 21
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 652.34765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 180,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "180.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 143.44921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 3
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 741.15234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 420,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "420.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 355.75
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 7
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 291.2734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 919.41015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "17:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 900.46875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 652.6171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 120,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "120.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 167.84375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 2
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 754.6875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 18,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 404.0546875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 18,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 391.4453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 18,
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "840.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1097.71875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 14
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 18,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "18:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 1005.328125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 611.59375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "River St S. & Soquel Ave",
+        "id": "1726",
+        "gtfsStopSequence": 1,
+        "code": 2754,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 120,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "120.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 149.4765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Delaware Ave & Swift",
+        "id": "1452",
+        "gtfsStopSequence": 12,
+        "code": 2330,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 2
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 682.9375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 14,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 312.609375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 25,
+        "name": "Bay & High (UCSC - Main Gate)",
+        "id": "1033",
+        "gtfsStopSequence": 26,
+        "code": 1341,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 240,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "240.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 250.3046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 30,
+        "name": "Hagar Dr (UCSC - Bookstore, Cowell & Stevenson)",
+        "id": "1361",
+        "gtfsStopSequence": 31,
+        "code": 2102,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 4
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 912.1015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 33,
+        "name": "McLaughlin Dr (UCSC - Science Hill)",
+        "id": "1168",
+        "gtfsStopSequence": 34,
+        "code": 1615,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "20",
+      "directionId": "1",
+      "tripPatternId": "route_20_1726_to_1594_09f2ae311f888695f1428628376ea7cd0c9e7ee56e8aaa0a1b194d8f1cb229db",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 13,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "19:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 789.2734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 48,
+        "name": "McAllister Way (Coastal Biology Building)",
+        "id": "1656",
+        "gtfsStopSequence": 49,
+        "code": 2749,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 63,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 64,
+        "code": 2667,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
     }
   ]
 }
