@@ -287,8 +287,8 @@ if __name__ == "__main__":
     wd, we = "1,2,3,4,5", "6,7"
 
     date_presets = {
-        "default_s": def_start,
-        "default_e": def_end,
+        "ds": def_start,
+        "de": def_end,
     }
 
     dow_presets = {
@@ -299,10 +299,26 @@ if __name__ == "__main__":
     # Ask for start & end date
     raw_dates = input(
         f"* Start date and end date\n"
-        f"** Format: 'MM-DD-YY' 'MM-DD-YY'\n"
+        f"** Format: MM-DD-YYYY MM-DD-YYYY\n"
         f"Press Enter for default ({def_start} to {def_end}), "
-        f"or use 'default_s' / 'default_e': "
+        f"or use 'ds' / 'de': "
     ).strip()
+
+    # Ask for start and end date to compare it to
+    compare_dates = input(
+        f"* Comparing: Start date and end date\n"
+        f"** Format: MM-DD-YYYY MM-DD-YYYY\n"
+        f"Press Enter for default ({def_start} to {def_end}), "
+        f"or use 'ds' / 'de': "
+    ).strip()
+
+    if compare_dates:
+        comp_start, comp_end = compare_dates.split()
+        # Replace presets if typed
+        comp_start = date_presets.get(comp_start, comp_start)
+        comp_end   = date_presets.get(comp_end, comp_end)
+    else:
+        comp_start, comp_end = def_start, def_end
 
     if raw_dates:
         start_date, end_date = raw_dates.split()
@@ -344,7 +360,6 @@ if __name__ == "__main__":
     
     # route, start_date, end_date, days_of_week, percentiles, direction = '73', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
 
-    # suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     dow = "wd"
     if days_of_week == we:
         dow = "we"        
@@ -371,25 +386,18 @@ if __name__ == "__main__":
     
     wb.save(filename)
     
-    # base_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
-    # percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
-
-    # schedule_grouped_timebands = percentiles_test.group_timebands(schedule_runtimes)
-    # base_timebands = percentiles_test.make_timebands(schedule_grouped_timebands)
-    base_timebands = sched_end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
-
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
-    scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
+    scheduled = suggested_runtimes(route, percentiles, comp_start, comp_end, days_of_week, direction, 1)
     diff_data = diff_runtimes(suggested, scheduled)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
-    
+    base_timebands = sched_end_to_end_runtimes(route, comp_start, comp_end, days_of_week, direction)
 
     print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
     runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
     runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 90th percentile runtime",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 85th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Base End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)
+    runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Fall End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)
