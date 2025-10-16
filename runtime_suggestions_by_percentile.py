@@ -356,16 +356,16 @@ if __name__ == "__main__":
     percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
     percentiles = [int(x.strip()) for x in percentiles.split(",")]
     
-    comp_length, comp_timepoints = get_num_timepoints(route, comp_start, comp_end, days_of_week, direction)
+    # comp_length, comp_timepoints = get_num_timepoints(route, comp_start, comp_end, days_of_week, direction)
     
-    if comp_length != length:
-        print(f"\n> Route {route} has {comp_length} timepoints for dates {comp_start} to {comp_end}:")
-        for tp in timepoints:
-            print(">> ", tp)
-        comp_percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
-        comp_percentiles = [int(x.strip()) for x in comp_percentiles.split(",")]
-    else:
-        comp_percentiles = percentiles
+    # if comp_length != length:
+    #     print(f"\n> Route {route} has {comp_length} timepoints for dates {comp_start} to {comp_end}:")
+    #     for tp in timepoints:
+    #         print(">> ", tp)
+    #     comp_percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
+    #     comp_percentiles = [int(x.strip()) for x in comp_percentiles.split(",")]
+    # else:
+    #     comp_percentiles = percentiles
 
 
     # route, start_date, end_date, days_of_week, percentiles, direction = '73', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
@@ -397,7 +397,7 @@ if __name__ == "__main__":
     wb.save(filename)
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
-    scheduled = suggested_runtimes(route, comp_percentiles, comp_start, comp_end, days_of_week, direction, 1)
+    scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
     diff_data = diff_runtimes(suggested, scheduled)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
