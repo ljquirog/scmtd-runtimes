@@ -197,7 +197,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
     base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
-    grouped_timebands = percentiles_test.group_timebands(percentile_runtimes) # groups trips if runtimes are within threshold
+    grouped_timebands = percentiles_test.group_timebands(percentile_runtimes,3) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
     print(grouped_timebands)
