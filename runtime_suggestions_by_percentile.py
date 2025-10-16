@@ -210,6 +210,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     timepoints = []
     for trip_time, stops in runtimes.items():
         if len(stops)-1 != len(percentiles):
+            print("# timepoints: ", len(stops)-1)
             raise ValueError("Number of timepoints != number of percentiles provided")
         timepoints = [tp for tp in stops if tp != "total"] # Grab all stop names except 'total'
         break  # only need to do this once
@@ -220,6 +221,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     print("\n=== STEP 3: Re-run stats for each timepoint at its assigned percentile ===")
     # Nested dict: {tp: {trip_time: [list of runtimes across days]}}
     per_timepoint_runtimes = {tp: {} for tp in timepoints}
+    # print(f"pertimepointruntimes: {per_timepoint_runtimes}")
 
     for i, p in enumerate(percentiles):
         tp = timepoints[i]
@@ -236,6 +238,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
         for trip_time, stops in runtimes.items():
             value = stops.get(tp)
             if value is None:
+                print()
                 value = 0  # default, or continue
             per_timepoint_runtimes[tp][trip_time] = value
             # print(f"Trip {trip_time}: {tp} runtime = {stops[tp]}")
@@ -367,8 +370,8 @@ if __name__ == "__main__":
     # else:
     #     comp_percentiles = percentiles
 
-
-    # route, start_date, end_date, days_of_week, percentiles, direction = '73', '09-11-2025', '10-11-2025', '1,2,3,4,5', [30,40,50], 1
+    # comp_start, comp_end = '09-11-2025', '10-12-2025'
+    # route, start_date, end_date, days_of_week, percentiles, direction = '3B', '09-11-2025', '10-12-2025', '1,2,3,4,5', [45,60], 1
 
     dow = "wd"
     if days_of_week == we:
@@ -398,18 +401,15 @@ if __name__ == "__main__":
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 0)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, 1)
+    # print(suggested)
     diff_data = diff_runtimes(suggested, scheduled)
     end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
     diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
     base_timebands = sched_end_to_end_runtimes(route, comp_start, comp_end, days_of_week, direction)
 
-    print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
+    # print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
     runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
-    wb = load_workbook(filename)
-    ws = wb.active
-    ws.append([f"Dates ran for: {comp_start} to {comp_end}"])
-    wb.save(filename)
     runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
     runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
