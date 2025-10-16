@@ -63,7 +63,6 @@ def get_num_timepoints(route, start, end, dow, direction):
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(fixed_route_stats)
     print(percentile_runtimes)
     for trip_time, stops in percentile_runtimes.items():
-        
         # Make sure user provided the right number of percentiles
         length = len(stops)-1
         # Grab all stop names except 'total'
@@ -205,6 +204,16 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     # percentile_runtimes = schedule_runtimes # be careful
     runtimes = percentile_runtimes if t==0 else schedule_runtimes
     
+    timepoint_length = []
+    # check to see if route has multiple variants (based on when # timepoints differs)
+    for trip_time, stops in runtimes.items():
+        # Make sure user provided the right number of percentiles
+        length = len(stops)-1
+        timepoint_length.append(length)
+    
+    variants = 1 if len(set(timepoint_length)) != 1 else 0    
+
+
     # === STEP 2: Extract timepoint names from the first trip ===
     print("\n=== STEP 2: Extract timepoint names ===")
     timepoints = []
@@ -236,12 +245,22 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
 
         # Fill per_timepoint_runtimes with runtimes for this stop at this percentile
         for trip_time, stops in runtimes.items():
+            # try matching by stop name first
             value = stops.get(tp)
+            # If name-based lookup fails, fall back to position-based
             if value is None:
-                print()
-                value = 0  # default, or continue
+                stop_keys = list(stops.keys())
+                stop_vals = list(stops.values())
+
+                if i < len(stop_vals) and not variants:  # ensure index exists, only if route doesnt have multiple variants
+                    value = stop_vals[i]
+                    alt_tp_name = stop_keys[i]
+                    print(f"⚠️ Timepoint name mismatch — using index {i}: '{alt_tp_name}' for '{tp}' at {trip_time}")
+                else:
+                    value = 0  # fallback if even that fails
+
             per_timepoint_runtimes[tp][trip_time] = value
-            # print(f"Trip {trip_time}: {tp} runtime = {stops[tp]}")
+
 
     # === STEP 4: Aggregate runtimes per timeband ===
     print("\n=== STEP 4: Aggregate runtimes per timeband ===")
