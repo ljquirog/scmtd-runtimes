@@ -61,13 +61,24 @@ def get_num_timepoints(route, start, end, dow, direction):
     length, timepoints = 0, []
     fixed_route_stats = get_route_stats(route, 60, start, end, dow, direction)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(fixed_route_stats)
-    print(percentile_runtimes)
     for trip_time, stops in percentile_runtimes.items():
         # Make sure user provided the right number of percentiles
         length = len(stops)-1
         # Grab all stop names except 'total'
         timepoints = [tp for tp in stops if tp != "total"]
         break  # only need to do this once
+    # timepoint_length = dict()
+    # # check to see if route has multiple variants (based on when # timepoints differs)
+    # for trip_time, stops in percentile_runtimes.items():
+    #     # Make sure user provided the right number of percentiles
+    #     length = len(stops)-1
+    #     timepoint_length[length] = stops
+    
+    # max_timepoint = max(timepoint_length.keys())
+    # timepoints = timepoint_length[max_timepoint]
+    # timepoints = [stops for stops in timepoints.keys() if stops != "total"]
+    # length = len(timepoints)
+
     return length, timepoints
 
 def end_to_end_runtimes(route, start, end, dow, direction):
@@ -204,15 +215,14 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
     # percentile_runtimes = schedule_runtimes # be careful
     runtimes = percentile_runtimes if t==0 else schedule_runtimes
     
-    timepoint_length = []
-    # check to see if route has multiple variants (based on when # timepoints differs)
-    for trip_time, stops in runtimes.items():
-        # Make sure user provided the right number of percentiles
-        length = len(stops)-1
-        timepoint_length.append(length)
-    
-    variants = 1 if len(set(timepoint_length)) != 1 else 0    
+    # variants = 1 if len(set(timepoint_length)) != 1 else 0    
 
+    # for each trip and stop in runtimes.items()
+        # length = len(stops)-1
+        # timepoint_length += (length, stops)
+    
+    # timepoints = the stops where length is the max out of all the runtimes
+    
 
     # === STEP 2: Extract timepoint names from the first trip ===
     print("\n=== STEP 2: Extract timepoint names ===")
@@ -223,9 +233,21 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
             raise ValueError("Number of timepoints != number of percentiles provided")
         timepoints = [tp for tp in stops if tp != "total"] # Grab all stop names except 'total'
         break  # only need to do this once
+    # timepoint_length = dict()
+    # # check to see if route has multiple variants (based on when # timepoints differs)
+    # for trip_time, stops in runtimes.items():
+    #     # Make sure user provided the right number of percentiles
+    #     length = len(stops)-1
+    #     timepoint_length[length] = stops
+    
+    # max_timepoint = max(timepoint_length.keys())
+    # timepoints = timepoint_length[max_timepoint]
+    # # timepoints.popitem()
+    # timepoints = [stops for stops in timepoints.keys() if stops != "total"]
+    # timepoints.keys()
     print("Timepoints:", timepoints)
     print("Percentiles:", percentiles)
-
+    
     # === STEP 3: Re-run stats for each timepoint at its assigned percentile ===
     print("\n=== STEP 3: Re-run stats for each timepoint at its assigned percentile ===")
     # Nested dict: {tp: {trip_time: [list of runtimes across days]}}
@@ -247,17 +269,20 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, t=0):
         for trip_time, stops in runtimes.items():
             # try matching by stop name first
             value = stops.get(tp)
-            # If name-based lookup fails, fall back to position-based
+            # print(value)
+            # # If name-based lookup fails, fall back to position-based
             if value is None:
-                stop_keys = list(stops.keys())
-                stop_vals = list(stops.values())
-
-                if i < len(stop_vals) and not variants:  # ensure index exists, only if route doesnt have multiple variants
-                    value = stop_vals[i]
-                    alt_tp_name = stop_keys[i]
-                    print(f"⚠️ Timepoint name mismatch — using index {i}: '{alt_tp_name}' for '{tp}' at {trip_time}")
-                else:
-                    value = 0  # fallback if even that fails
+                continue
+            #     value = 0  # fallback if even that fails
+                # stop_keys = list(stops.keys())
+                # stop_vals = list(stops.values())
+                # #  and not variants
+                # if i < len(stop_vals):  # ensure index exists, only if route doesnt have multiple variants
+                #     # value = stop_vals[i]
+                #     alt_tp_name = stop_keys[i]
+                #     # print(f"⚠️ Timepoint name mismatch — using index {i}: '{alt_tp_name}' for '{tp}' at {trip_time}")
+                # else:
+                #     value = 0  # fallback if even that fails
 
             per_timepoint_runtimes[tp][trip_time] = value
 
@@ -367,11 +392,40 @@ if __name__ == "__main__":
 
     route = input("* Route: ")
     direction = input("* Direction (0=outbound, 1=inbound): ")
-    length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
+
+    runtimes = fixed_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
+    runtimes, _ = percentiles_test.runtime_per_trip(fixed_route_stats)
+
+    timepoint_length = dict()
+    # check to see if route has multiple variants (based on when # timepoints differs)
+    for trip_time, stops in runtimes.items():
+        # Make sure user provided the right number of percentiles
+        length = len(stops)-1
+        timepoint_length[length] = stops
+    
+    # have user choose which variant to run
+    # LEFT HERE: DEBUGGING
+    test = []
+    stop_list = []
+
+    if len(timepoint_length) > 1:
+        print("Route has multiple variants.")
+        for i, (length, stops) in enumerate(timepoint_length.items(), start=1):
+            print(f"\nOption {i}:")
+            for stop in list(stops)[:-1]:
+                print(stop)
+            test.append(stops)  # store each variant's stops
+        variant = int(input("\nWhich variant would you like to run? ")) - 1
+        timepoints = [stop for stop in test[variant] if stop != "total"]
+        length = len(timepoints)
+    else:
+        length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
+
+    
+
     print(f"\n> Route {route} has {length} timepoints for dates {start_date} to {end_date}:")
     for tp in timepoints:
         print(">> ", tp)
-    
     if length == 0:
         raise ValueError("Timepoint calculation failed; route has 0 timepoints")
     

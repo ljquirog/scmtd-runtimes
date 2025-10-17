@@ -1,201 +1,13 @@
 {
   "pathStats": [
     {
-      "routeShortName": "3B",
+      "routeShortName": "34",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
       "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 540,
-      "scheduledTripStartTime": "06:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "540.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 837.736328125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 9
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "06:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "780.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 754.77734375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 13
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 720,
-      "scheduledTripStartTime": "07:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "720.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 873.28515625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 12
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "07:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "900.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1007.44921875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 15
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
+      "numObservedPaths": 18,
       "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "07:50:00",
+      "scheduledTripStartTime": "07:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -208,26 +20,26 @@
           "type": "percentile",
           "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 1170.54296875
+          "value": 1237.083984375
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
         "gtfsStopSequence": 1,
-        "code": 1659,
+        "code": 1569,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -236,906 +48,13 @@
       "scheduledRuntimeMinutes": 14
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "34",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "07:50:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1188.5859375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "09:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1208.77734375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "09:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1228.6171875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "10:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1087.56640625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "10:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1038.96484375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "11:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1020.921875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "11:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1152.12890625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "12:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1145.78125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "12:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1135.9609375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "13:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1068.359375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "13:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1140.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1181.59765625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 19
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
       "numScheduledPaths": 22,
       "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "14:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1246.74609375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "14:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1189.86328125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "15:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1205.3125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "15:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1217.3515625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "16:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1251.6484375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "16:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1127.6484375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "17:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1119.69921875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_772b53ed4f1f5317ac03b0b4cb85047eadd8ca206b744707f2e7b1b6e8e08ac4",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1380,
-      "scheduledTripStartTime": "17:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1380.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1200.8515625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 21,
-        "name": "7th Ave & Tanner Ct",
-        "id": "1646",
-        "gtfsStopSequence": 22,
-        "code": 2732,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 33,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 34,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 23
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 21,
       "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "18:00:00",
+      "scheduledTripStartTime": "07:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -1148,26 +67,120 @@
           "type": "percentile",
           "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 1075.74609375
+          "value": 671.92578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "08:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1321.037109375
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
         "gtfsStopSequence": 1,
-        "code": 1659,
+        "code": 1569,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 13,
+        "name": "Scotts Valley High School & Glenwood",
+        "id": "1769",
+        "gtfsStopSequence": 14,
+        "code": 2652,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "08:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 711.45703125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "Scotts Valley High School & Glenwood",
+        "id": "1769",
+        "gtfsStopSequence": 14,
+        "code": 2652,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 16,
+        "code": 2603,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -1176,389 +189,60 @@
       "scheduledRuntimeMinutes": 11
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "34",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
       "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1140,
-      "scheduledTripStartTime": "18:00:00",
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 840,
+      "scheduledTripStartTime": "08:00:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "1140.0"
+            "840.0"
           ]
         },
         {
           "type": "percentile",
           "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 873.9921875
+          "value": 570.234375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 15,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 16,
+        "code": 2603,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
+        "stopPathIndex": 25,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 26,
+        "code": 2365,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 19
+      "scheduledRuntimeMinutes": 14
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "34",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
       "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 480,
-      "scheduledTripStartTime": "19:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "480.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 959.53125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 8
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "19:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "960.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 824.4140625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 16
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 480,
-      "scheduledTripStartTime": "20:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "480.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 976.6328125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 8
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "20:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "960.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 750.9375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 16
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 480,
-      "scheduledTripStartTime": "21:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "480.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 839.890625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 8
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "21:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "960.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 694.7734375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 16
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 17,
-      "scheduledRuntimeSeconds": 300,
-      "scheduledTripStartTime": "22:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "300.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 959.5546875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
-        "gtfsStopSequence": 1,
-        "code": 1659,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 5
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 17,
+      "numObservedPaths": 21,
       "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "22:00:00",
+      "scheduledTripStartTime": "08:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -1571,88 +255,88 @@
           "type": "percentile",
           "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 762.6953125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 15
-    },
-    {
-      "routeShortName": "3B",
-      "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 18,
-      "scheduledRuntimeSeconds": 300,
-      "scheduledTripStartTime": "23:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "300.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 753.234375
+          "value": 1229.45703125
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Capitola Mall - Lane 1",
-        "id": "1659",
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
         "gtfsStopSequence": 1,
-        "code": 1659,
+        "code": 1569,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 5
+      "scheduledRuntimeMinutes": 15
     },
     {
-      "routeShortName": "3B",
+      "routeShortName": "34",
       "directionId": "1",
-      "tripPatternId": "route_3B_1659_to_1594_1b8ee2859ee6a7aaaa85579947c134cce1a182241df6f8d981231d817a2b2098",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
       "numScheduledPaths": 22,
-      "numObservedPaths": 18,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "08:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 638.625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
       "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "23:00:00",
+      "scheduledTripStartTime": "09:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -1665,32 +349,925 @@
           "type": "percentile",
           "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 704.9921875
+          "value": 1182.8046875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 22,
-        "name": "Capitola Rd & 7th Ave",
-        "id": "1007",
-        "gtfsStopSequence": 23,
-        "code": 1288,
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "09:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 735.1015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 32,
-        "name": "Front & Soquel Ave",
-        "id": "1594",
-        "gtfsStopSequence": 33,
-        "code": 2667,
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 900,
+      "scheduledTripStartTime": "10:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "900.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1019.12890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 720,
+      "scheduledTripStartTime": "10:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "720.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 677.3359375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 12
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 960,
+      "scheduledTripStartTime": "11:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "960.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1136.88671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 16
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "11:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 688.89453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1218.7734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 638.39453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 1020,
+      "scheduledTripStartTime": "13:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1020.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1213.84765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 17
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "13:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 709.609375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "14:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "600.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1438.9140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "Scotts Valley High School & Glenwood",
+        "id": "1769",
+        "gtfsStopSequence": 14,
+        "code": 2652,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 10
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "14:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 744.07421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "Scotts Valley High School & Glenwood",
+        "id": "1769",
+        "gtfsStopSequence": 14,
+        "code": 2652,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 16,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 900,
+      "scheduledTripStartTime": "14:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "900.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 723.8203125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 16,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 26,
+        "code": 2365,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
       "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "15:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1084.94140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 13,
+        "name": "Scotts Valley High School & Glenwood",
+        "id": "1769",
+        "gtfsStopSequence": 14,
+        "code": 2652,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 19,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "15:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 670.36328125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 13,
+        "name": "Scotts Valley High School & Glenwood",
+        "id": "1769",
+        "gtfsStopSequence": 14,
+        "code": 2652,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 16,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 900,
+      "scheduledTripStartTime": "15:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "900.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 708.1640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 15,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 16,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 25,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 26,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 900,
+      "scheduledTripStartTime": "16:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "900.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1105.296875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "16:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 780.60546875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 13
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 900,
+      "scheduledTripStartTime": "17:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "900.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1172.7421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 15
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "1",
+      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 780,
+      "scheduledTripStartTime": "17:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "780.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 587.0390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1561",
+        "gtfsStopSequence": 11,
+        "code": 2603,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 20,
+        "name": "Soquel Ave & Front",
+        "id": "1466",
+        "gtfsStopSequence": 21,
+        "code": 2365,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 13
     }
   ]
 }
