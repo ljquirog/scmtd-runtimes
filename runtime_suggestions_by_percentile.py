@@ -226,6 +226,7 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     #         raise ValueError("Number of timepoints != number of percentiles provided")
     #     timepoints = [tp for tp in stops if tp != "total"] # Grab all stop names except 'total'
     #     break  # only need to do this once
+    
     print("Timepoints:", timepoints)
     print("Percentiles:", percentiles)
     
@@ -249,11 +250,10 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
         for trip_time, stops in runtimes.items():
             # try matching by stop name first
             value = stops.get(tp)
-            print(trip_time, value)
             # # If name-based lookup fails, fall back to position-based
             if value is None:
                 continue
-        per_timepoint_runtimes[tp][trip_time] = value
+            per_timepoint_runtimes[tp][trip_time] = value
     print(per_timepoint_runtimes)
 
     # === STEP 4: Aggregate runtimes per timeband ===
@@ -263,11 +263,13 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
         tb_start, tb_end = timeband_range
         agg = {}
         print(f"\nTimeband {tb_start} - {tb_end}")
+        print(timepoints)
         # For each timepoint, look at all trips inside this timeband group
         for tp in timepoints:
             new_runtimes = []
             print(f"  Timepoint {tp}:")
-            
+            print(f"Per timepoint runtimes for {tp}:\n{per_timepoint_runtimes[tp]}")
+            print(f"Trips in timeband: {grouped_timebands[j]}")
             for trip_time, _ in grouped_timebands[j]:
                 if trip_time in per_timepoint_runtimes[tp]:
                     new_runtimes.append(per_timepoint_runtimes[tp][trip_time])  # append all days
