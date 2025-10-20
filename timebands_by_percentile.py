@@ -10,9 +10,10 @@ import sys
 import percentiles_test
 import all_routes_test
 import json_to_csv
+import cp_rt_suggestions
 from datetime import datetime, timedelta
 
-def route_new_timebands(route, percentile, start_date, end_date, days_of_week, direction):
+def route_new_timebands(route, percentile, start_date, end_date, days_of_week, direction,variant_trips=0):
     route_stats_json = api_request.call(route, percentile, start_date, end_date, days_of_week, direction)
     
     route_stats_to_txt = json_to_file.txt_convert('routeStats.json', route_stats_json)  
@@ -26,6 +27,8 @@ def route_new_timebands(route, percentile, start_date, end_date, days_of_week, d
         json.dump(route_stats, file, indent=2, ensure_ascii=False)
     # gets the runtimes for a route based on percentile (observed) and schedule, respectively.
     # stop, runtime pair for each timepoint, with the total runtime at the end of list
+    if variant_trips:
+        cp_rt_suggestions.filter_variant_trips("routeStats.json", variant_trips)
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(route_stats) 
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes)    
     new_timebands = percentiles_test.make_timebands(grouped_timebands) 

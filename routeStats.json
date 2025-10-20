@@ -2,106 +2,59 @@
   "pathStats": [
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
       "numObservedPaths": 25,
-      "scheduledRuntimeSeconds": 600,
-      "scheduledTripStartTime": "08:00:00",
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "06:45:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "600.0"
+            "540.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 1290.130859375
+          "value": 623.337890625
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front & Soquel Ave",
+        "id": "1594",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2667,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 10
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 27,
-      "numObservedPaths": 24,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "08:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "660.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 624.1796875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 15,
+        "stopPathIndex": 11,
         "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 11
+      "scheduledRuntimeMinutes": 9
     },
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
       "numObservedPaths": 25,
       "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "08:00:00",
+      "scheduledTripStartTime": "06:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -112,28 +65,28 @@
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 513.08984375
+          "value": 1159.04296875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 15,
+        "stopPathIndex": 11,
         "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 25,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 26,
-        "code": 2365,
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -143,12 +96,106 @@
     },
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 25,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "08:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 679.701171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 1,
+        "code": 2667,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "08:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1118.25390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
       "numObservedPaths": 26,
       "scheduledRuntimeSeconds": 600,
-      "scheduledTripStartTime": "14:45:00",
+      "scheduledTripStartTime": "09:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -159,28 +206,28 @@
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 1270.03515625
+          "value": 680.26171875
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front & Soquel Ave",
+        "id": "1594",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2667,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -190,153 +237,153 @@
     },
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
       "numObservedPaths": 26,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "14:45:00",
+      "scheduledRuntimeSeconds": 960,
+      "scheduledTripStartTime": "09:45:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "660.0"
+            "960.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 666.5703125
+          "value": 1018.33203125
         }
       ],
       "fromStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 11
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 27,
-      "numObservedPaths": 27,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "14:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "900.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 60,
-          "field": "observedRuntimeSeconds",
-          "value": 645.15234375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 25,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 26,
-        "code": 2365,
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 16
     },
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
-      "numObservedPaths": 24,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "15:45:00",
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 600,
+      "scheduledTripStartTime": "10:45:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "660.0"
+            "600.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 1016.45703125
+          "value": 757.79296875
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front & Soquel Ave",
+        "id": "1594",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2667,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 11
+      "scheduledRuntimeMinutes": 10
     },
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
-      "numObservedPaths": 24,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "10:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1088.78515625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
       "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "15:45:00",
+      "scheduledTripStartTime": "11:45:00",
       "aggregates": [
         {
           "type": "list",
@@ -347,28 +394,28 @@
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 611.32421875
+          "value": 707.76171875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
+        "stopPathIndex": 0,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 1,
+        "code": 2667,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
+        "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 15,
+        "stopPathIndex": 11,
         "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
@@ -378,50 +425,332 @@
     },
     {
       "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
       "numScheduledPaths": 27,
-      "numObservedPaths": 25,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "15:45:00",
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "11:45:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "1140.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 60,
+          "percentile": 90,
           "field": "observedRuntimeSeconds",
-          "value": 659.1796875
+          "value": 1117.2109375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 15,
+        "stopPathIndex": 11,
         "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 25,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 26,
-        "code": 2365,
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 744.83984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 1,
+        "code": 2667,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 1080,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1080.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1071.12890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 18
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "13:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 682.1953125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 1,
+        "code": 2667,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "13:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1080.20703125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 26,
+      "scheduledRuntimeSeconds": 660,
+      "scheduledTripStartTime": "16:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "660.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 689.57421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front & Soquel Ave",
+        "id": "1594",
+        "gtfsStopSequence": 1,
+        "code": 2667,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 11
+    },
+    {
+      "routeShortName": "34",
+      "directionId": "0",
+      "tripPatternId": "route_34_1594_to_1569_3799901fc9af1d7f530cfec90c483f0700fb7bfa585f72b98819d237b30f09cd",
+      "numScheduledPaths": 27,
+      "numObservedPaths": 27,
+      "scheduledRuntimeSeconds": 1140,
+      "scheduledTripStartTime": "16:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "1140.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 90,
+          "field": "observedRuntimeSeconds",
+          "value": 1174.1171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 11,
+        "name": "Emeline Ave (Emeline Complex - Building K)",
+        "id": "1695",
+        "gtfsStopSequence": 12,
+        "code": 2753,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 23,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 24,
+        "code": 1569,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 19
     }
   ]
 }
