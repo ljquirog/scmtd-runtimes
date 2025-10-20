@@ -7,7 +7,7 @@ import json_to_file
 import sys 
 from datetime import datetime, timedelta
 
-def runtime_per_trip(route_stats):
+def runtime_per_trip(route_stats, t=0):
     percentile_runtimes = {}
     scheduled_runtimes = {}
 
@@ -20,7 +20,6 @@ def runtime_per_trip(route_stats):
         scheduled_mins, percentile_mins, trip_start_time = trip['scheduledRuntimeMinutes'], math.ceil(trip['aggregates'][1]['value']/60), trip['scheduledTripStartTime']
         
         stop_name = f"{trip['fromStop']['name']} → {trip['toStop']['name']}"
-
         
         # scheduled runtimes
         if trip_start_time not in scheduled_runtimes:

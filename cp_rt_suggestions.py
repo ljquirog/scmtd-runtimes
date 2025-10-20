@@ -1,3 +1,4 @@
+import os
 import json
 import math
 import api_request
@@ -7,8 +8,7 @@ import runtimes_to_csv
 from datetime import datetime, timedelta
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
-import os
-
+from collections import defaultdict
 
 def diff_runtimes(scheduled, suggested):
     """
@@ -299,9 +299,37 @@ def get_end_to_end_diff(end_to_end, suggested):
         differences.append(((start_s, end_s), {"total": diff}))
     return differences
 
+def filter_variant_trips(input_file="routeStats.json", variant_trips=None):
+    """
+    Overwrites routeStats.json to only include trips whose scheduledTripStartTime
+    is in the variant_trips list.
+
+    Args:
+        input_file (str): Path to the JSON file to modify.
+        variant_trips (list): List of scheduledTripStartTime strings to keep, e.g. ["07:45:00", "08:15:00"].
+    """
+    if not variant_trips:
+        raise ValueError("You must provide a list of variant_trips to keep.")
+
+    # Load the JSON data
+    with open(input_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Filter pathStats by scheduledTripStartTime
+    data["pathStats"] = [
+        path for path in data.get("pathStats", [])
+        if path.get("scheduledTripStartTime") in variant_trips
+    ]
+
+    # Overwrite the same file with filtered data
+    with open(input_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"✅ routeStats.json updated: kept {len(data['pathStats'])} trips matching variant_trips.")
+
     
 if __name__ == "__main__":
-    def_start, def_end = "09-11-2025", "10-12-2025"
+    def_start, def_end = "09-11-2025", "10-20-2025"
     wd, we = "1,2,3,4,5", "6,7"
 
     date_presets = {
@@ -364,18 +392,24 @@ if __name__ == "__main__":
     route = input("* Route: ")
     direction = input("* Direction (0=outbound, 1=inbound): ")
 
-    runtimes = fixed_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
-    runtimes, _ = percentiles_test.runtime_per_trip(fixed_route_stats)
+    fixed_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
+    runtimes, _ = percentiles_test.runtime_per_trip(fixed_route_stats) # groups into arrows
 
+    # identify all unique variants in a list, based on diff timepoints (even if # timepoints is the same)
     timepoint_sets = []
-
     for trip_time, stops in runtimes.items():
         stop_list = [s for s in stops if s != "total"]
         if stop_list not in timepoint_sets:
             timepoint_sets.append(stop_list)
-
-    print(timepoint_sets)
-
+    
+    timepoint_groups = defaultdict(list)
+    for trip_time, stops in runtimes.items():
+        stop_list = tuple([s for s in stops if s != "total"])  # tuples can be dict keys
+        timepoint_groups[stop_list].append(trip_time)
+    timepoint_groups = list(timepoint_groups.items())
+    print(f"Sets:\n{timepoint_sets}\nGroups:\n{timepoint_groups}")
+    
+    # if multiple variants
     if len(timepoint_sets) > 1:
         print("Route has multiple variants.")
         for i, stops in enumerate(timepoint_sets, start=1):
@@ -385,9 +419,18 @@ if __name__ == "__main__":
         variant = int(input("\nWhich variant would you like to run? ")) - 1
         timepoints = timepoint_sets[variant]
         length = len(timepoints)
+        print(f"tp sets:\n{timepoints}\ntp groups:\n{timepoint_groups[variant]}")
+        variant_tps, variant_trips = timepoint_groups[variant]
+        print(variant_trips)
+        filter_variant_trips("routeStats.json", variant_trips)
+        # clean up fixed route stats to exclude timepoints they pick
+        # get the trip times of the variants they want
+        # call function that edits routeStats
+            # go through and keep only instances of trip times in question
+            # 
     else:
         length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-
+    
 
     print(f"\n> Route {route} has {length} timepoints for dates {start_date} to {end_date}:")
     for tp in timepoints:
