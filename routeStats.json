@@ -1,120 +1,2329 @@
 {
   "pathStats": [
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "04:55:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 318.375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "04:55:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 493.517578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2640,
+      "scheduledTripStartTime": "04:55:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2640.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2420.0390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 44
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "05:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 336.775390625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "05:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2520.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2325.1640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "05:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 325.208984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "05:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 539.126953125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 8,
+      "scheduledRuntimeSeconds": 2640,
+      "scheduledTripStartTime": "05:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2640.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2560.572265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 44
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 8,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "05:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 377.037109375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "E San Fernando & S 7th",
+        "id": "872",
+        "gtfsStopSequence": 16,
+        "code": 914,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "06:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 374.857421875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "06:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2520.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2480.875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "06:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 374.265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "06:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 535.619140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 17,
+      "scheduledRuntimeSeconds": 2640,
+      "scheduledTripStartTime": "06:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2640.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2797.4140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 44
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_872_e3849856c234b037b61910463993d3c70a8b95d3c67f54bb5368b670dc36bfb2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 17,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "06:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 558.529296875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 15,
+        "name": "E San Fernando & S 7th",
+        "id": "872",
+        "gtfsStopSequence": 16,
+        "code": 914,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 417.546875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "07:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2520.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2813.806640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1569_to_872_4a2c34e281dddb8082f63566793469bb020ce7620b1198fd91adccfb4e34b01d",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 10,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "07:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 3125.201171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 7,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1569_to_872_4a2c34e281dddb8082f63566793469bb020ce7620b1198fd91adccfb4e34b01d",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 8,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "07:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 620.7109375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 7,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "E San Fernando & S 7th",
+        "id": "872",
+        "gtfsStopSequence": 12,
+        "code": 914,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 448.2265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "08:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2520.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2659.83203125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1569_to_872_4a2c34e281dddb8082f63566793469bb020ce7620b1198fd91adccfb4e34b01d",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 13,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "08:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2995.064453125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 7,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1569_to_872_4a2c34e281dddb8082f63566793469bb020ce7620b1198fd91adccfb4e34b01d",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 12,
+      "scheduledRuntimeSeconds": 540,
+      "scheduledTripStartTime": "08:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "540.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 483.734375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 6,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 7,
+        "code": 904,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 11,
+        "name": "E San Fernando & S 7th",
+        "id": "872",
+        "gtfsStopSequence": 12,
+        "code": 914,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 9
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 446.9765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "09:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2520.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2609.67578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "09:55:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 406.7890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "09:55:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2520.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2538.90234375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "10:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 390.26171875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "10:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 572.08984375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "10:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2709.88671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "12:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 411.42578125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2640,
+      "scheduledTripStartTime": "12:00:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2640.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2323.12890625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 44
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 400.5078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 691.23046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "12:45:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2778.3828125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "13:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 401.66015625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2820,
+      "scheduledTripStartTime": "13:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2820.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2464.05859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 47
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "13:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 372.9140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2820,
+      "scheduledTripStartTime": "13:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2820.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2469.06640625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 47
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1569_to_866_3eb99fcc460775ee27ef35571fd430fdeda987b3976e2438c7e7ac140a086c2d",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "14:23:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2769.28125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 1,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 6,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 7,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "14:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 451.60546875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2820,
+      "scheduledTripStartTime": "14:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2820.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2872.328125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 47
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "15:10:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 415.94921875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "15:10:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 639.8671875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "15:10:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 3101
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "15:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 452.5078125
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
       "numScheduledPaths": 22,
       "numObservedPaths": 18,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "07:45:00",
+      "scheduledRuntimeSeconds": 2940,
+      "scheduledTripStartTime": "15:35:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "840.0"
+            "2940.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 1237.083984375
+          "value": 2955.87109375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 14
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "07:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "660.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 671.92578125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 11
+      "scheduledRuntimeMinutes": 49
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
       "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 600,
-      "scheduledTripStartTime": "08:00:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "16:20:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "600.0"
+            "360.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 1321.037109375
+          "value": 380.44140625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 6
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2940,
+      "scheduledTripStartTime": "16:20:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2940.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 3092.97265625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 49
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1569_to_866_3eb99fcc460775ee27ef35571fd430fdeda987b3976e2438c7e7ac140a086c2d",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "16:23:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 3427.41015625
         }
       ],
       "fromStop": {
@@ -129,1145 +2338,816 @@
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
+        "stopPathIndex": 6,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 7,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "16:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 387.15625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 10
+      "scheduledRuntimeMinutes": 6
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 18,
+      "scheduledRuntimeSeconds": 2940,
+      "scheduledTripStartTime": "16:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2940.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 2954.3046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 49
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "17:10:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 408.65625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 5
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "17:10:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "480.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 622.49609375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 8
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_795ff87044f6f24eb8aa86458aaf0c766306f12301a3a09007ad33b7e3ee2190",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 2880,
+      "scheduledTripStartTime": "17:10:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "2880.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 3030.34765625
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 10,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 11,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 48
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 420,
+      "scheduledTripStartTime": "17:35:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "420.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 408.55859375
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 0,
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
+        "gtfsStopSequence": 1,
+        "code": 2764,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": true,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "scheduledRuntimeMinutes": 7
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
       "numScheduledPaths": 22,
       "numObservedPaths": 20,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "08:00:00",
+      "scheduledRuntimeSeconds": 3120,
+      "scheduledTripStartTime": "17:35:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "660.0"
+            "3120.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 711.45703125
+          "value": 3050.4921875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 11
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 840,
-      "scheduledTripStartTime": "08:00:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "840.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 570.234375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 25,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 26,
-        "code": 2365,
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 14
+      "scheduledRuntimeMinutes": 52
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_6c033e4dc029f635ef55b34c431240bb952f2d2799644a260417d4372079c49e",
       "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "08:45:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "18:05:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "360.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 1229.45703125
+          "value": 363.875
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2764,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 6
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_6c033e4dc029f635ef55b34c431240bb952f2d2799644a260417d4372079c49e",
       "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 720,
-      "scheduledTripStartTime": "08:45:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 480,
+      "scheduledTripStartTime": "18:05:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "720.0"
+            "480.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 638.625
+          "value": 553.0703125
         }
       ],
       "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
-        "isWaitStop": false,
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
+        "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 12
+      "scheduledRuntimeMinutes": 8
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_6c033e4dc029f635ef55b34c431240bb952f2d2799644a260417d4372079c49e",
       "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "09:45:00",
+      "numObservedPaths": 13,
+      "scheduledRuntimeSeconds": 3480,
+      "scheduledTripStartTime": "18:05:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "3480.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 1182.8046875
+          "value": 2781.3046875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 8,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 9,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 58
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 360,
+      "scheduledTripStartTime": "18:50:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "360.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 355.6484375
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2764,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 6
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
       "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 720,
-      "scheduledTripStartTime": "09:45:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2940,
+      "scheduledTripStartTime": "18:50:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "720.0"
+            "2940.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 735.1015625
+          "value": 2473.8984375
         }
       ],
       "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 12
+      "scheduledRuntimeMinutes": 49
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "10:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "900.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1019.12890625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 15
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 720,
-      "scheduledTripStartTime": "10:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "720.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 677.3359375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 12
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 960,
-      "scheduledTripStartTime": "11:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "960.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1136.88671875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 16
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "11:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "780.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 688.89453125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 13
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1020,
-      "scheduledTripStartTime": "12:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1020.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1218.7734375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 17
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "12:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "780.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 638.39453125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 13
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 1020,
-      "scheduledTripStartTime": "13:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "1020.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1213.84765625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 17
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "13:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "780.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 709.609375
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 13
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 600,
-      "scheduledTripStartTime": "14:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "600.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1438.9140625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 10
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "14:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "660.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 744.07421875
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 11
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 22,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "14:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "900.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 723.8203125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 25,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 26,
-        "code": 2365,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 15
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "15:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "660.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1084.94140625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
-        "gtfsStopSequence": 1,
-        "code": 1569,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": true,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 11
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 19,
-      "scheduledRuntimeSeconds": 660,
-      "scheduledTripStartTime": "15:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "660.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 670.36328125
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 13,
-        "name": "Scotts Valley High School & Glenwood",
-        "id": "1769",
-        "gtfsStopSequence": 14,
-        "code": 2652,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "scheduledRuntimeMinutes": 11
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_0221f693c12e430ccfe3c1b85e87f09f4debd8a2c25a6cb26883cd3fcf44b8d0",
+      "tripPatternId": "route_17_1733_to_866_6c033e4dc029f635ef55b34c431240bb952f2d2799644a260417d4372079c49e",
       "numScheduledPaths": 22,
       "numObservedPaths": 20,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "15:45:00",
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "20:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "300.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 708.1640625
-        }
-      ],
-      "fromStop": {
-        "stopPathIndex": 15,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 16,
-        "code": 2603,
-        "isWaitStop": true,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": false
-      },
-      "toStop": {
-        "stopPathIndex": 25,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 26,
-        "code": 2365,
-        "isWaitStop": false,
-        "isScheduleAdherenceStop": true,
-        "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
-      },
-      "scheduledRuntimeMinutes": 15
-    },
-    {
-      "routeShortName": "34",
-      "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
-      "numScheduledPaths": 22,
-      "numObservedPaths": 20,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "16:45:00",
-      "aggregates": [
-        {
-          "type": "list",
-          "field": "scheduledRuntimeSeconds",
-          "value": [
-            "900.0"
-          ]
-        },
-        {
-          "type": "percentile",
-          "percentile": 90,
-          "field": "observedRuntimeSeconds",
-          "value": 1105.296875
+          "value": 420.1875
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2764,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 5
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_6c033e4dc029f635ef55b34c431240bb952f2d2799644a260417d4372079c49e",
       "numScheduledPaths": 22,
-      "numObservedPaths": 20,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "16:45:00",
+      "numObservedPaths": 21,
+      "scheduledRuntimeSeconds": 420,
+      "scheduledTripStartTime": "20:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "780.0"
+            "420.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 780.60546875
+          "value": 539.4921875
         }
       ],
       "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
-        "isWaitStop": false,
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
-        "isLastStopInTrip": true
+        "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 13
+      "scheduledRuntimeMinutes": 7
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_6c033e4dc029f635ef55b34c431240bb952f2d2799644a260417d4372079c49e",
       "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 900,
-      "scheduledTripStartTime": "17:45:00",
+      "numObservedPaths": 20,
+      "scheduledRuntimeSeconds": 2520,
+      "scheduledTripStartTime": "20:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "900.0"
+            "2520.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 1172.7421875
+          "value": 2541.296875
+        }
+      ],
+      "fromStop": {
+        "stopPathIndex": 4,
+        "name": "Cavallaro Transit Center (Scotts Valley)",
+        "id": "1569",
+        "gtfsStopSequence": 5,
+        "code": 1569,
+        "isWaitStop": true,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": false
+      },
+      "toStop": {
+        "stopPathIndex": 8,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 9,
+        "code": 904,
+        "isWaitStop": false,
+        "isScheduleAdherenceStop": true,
+        "isFirstStopInTrip": false,
+        "isLastStopInTrip": true
+      },
+      "scheduledRuntimeMinutes": 42
+    },
+    {
+      "routeShortName": "17",
+      "directionId": "1",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
+      "numScheduledPaths": 22,
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 300,
+      "scheduledTripStartTime": "22:25:00",
+      "aggregates": [
+        {
+          "type": "list",
+          "field": "scheduledRuntimeSeconds",
+          "value": [
+            "300.0"
+          ]
+        },
+        {
+          "type": "percentile",
+          "percentile": 60,
+          "field": "observedRuntimeSeconds",
+          "value": 358.5859375
         }
       ],
       "fromStop": {
         "stopPathIndex": 0,
-        "name": "Cavallaro Transit Center (Scotts Valley)",
-        "id": "1569",
+        "name": "Front (Trader Joe's)",
+        "id": "1733",
         "gtfsStopSequence": 1,
-        "code": 1569,
+        "code": 2764,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": true,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
-      "scheduledRuntimeMinutes": 15
+      "scheduledRuntimeMinutes": 5
     },
     {
-      "routeShortName": "34",
+      "routeShortName": "17",
       "directionId": "1",
-      "tripPatternId": "route_34_1569_to_1466_3b52f248f95895d99890bf33e66b99f4ebc17ec9395baf813e2dac9f350d39a7",
+      "tripPatternId": "route_17_1733_to_866_33cfcd5947c5905a9d1a006c8e12f5940210fd319f6de3095f216eb4abff43b2",
       "numScheduledPaths": 22,
-      "numObservedPaths": 21,
-      "scheduledRuntimeSeconds": 780,
-      "scheduledTripStartTime": "17:45:00",
+      "numObservedPaths": 22,
+      "scheduledRuntimeSeconds": 2580,
+      "scheduledTripStartTime": "22:25:00",
       "aggregates": [
         {
           "type": "list",
           "field": "scheduledRuntimeSeconds",
           "value": [
-            "780.0"
+            "2580.0"
           ]
         },
         {
           "type": "percentile",
-          "percentile": 90,
+          "percentile": 60,
           "field": "observedRuntimeSeconds",
-          "value": 587.0390625
+          "value": 2258.390625
         }
       ],
       "fromStop": {
-        "stopPathIndex": 10,
-        "name": "Emeline Ave (Emeline Complex - Building K)",
-        "id": "1561",
-        "gtfsStopSequence": 11,
-        "code": 2603,
+        "stopPathIndex": 2,
+        "name": "Hwy 17 & Pasatiempo Dr",
+        "id": "1162",
+        "gtfsStopSequence": 3,
+        "code": 1570,
         "isWaitStop": true,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": false
       },
       "toStop": {
-        "stopPathIndex": 20,
-        "name": "Soquel Ave & Front",
-        "id": "1466",
-        "gtfsStopSequence": 21,
-        "code": 2365,
+        "stopPathIndex": 5,
+        "name": "Diridon Station (Caltrain Depot)",
+        "id": "866",
+        "gtfsStopSequence": 6,
+        "code": 904,
         "isWaitStop": false,
         "isScheduleAdherenceStop": true,
         "isFirstStopInTrip": false,
         "isLastStopInTrip": true
       },
-      "scheduledRuntimeMinutes": 13
+      "scheduledRuntimeMinutes": 43
     }
   ]
 }
