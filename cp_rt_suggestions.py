@@ -5,6 +5,7 @@ import api_request
 import json_to_file
 import percentiles_test
 import runtimes_to_csv
+import numpy as np
 from datetime import datetime, timedelta
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
@@ -244,7 +245,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     print("\n=== STEP 3: Re-run stats for each timepoint at its assigned percentile ===")
     # Nested dict: {tp: {trip_time: [list of runtimes across days]}}
     per_timepoint_runtimes = {tp: {} for tp in timepoints}
-    print(f"Per timepoint runtimes: {per_timepoint_runtimes}")
 
     for i, p in enumerate(percentiles):
         tp = timepoints[i]
@@ -266,7 +266,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
             if value is None:
                 continue
             per_timepoint_runtimes[tp][trip_time] = value
-    print(per_timepoint_runtimes)
 
     # === STEP 4: Aggregate runtimes per timeband ===
     print("\n=== STEP 4: Aggregate runtimes per timeband ===")
@@ -280,8 +279,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
         for tp in timepoints:
             new_runtimes = []
             print(f"  Timepoint {tp}:")
-            print(f"Per timepoint runtimes for {tp}:\n{per_timepoint_runtimes[tp]}")
-            print(f"Trips in timeband: {grouped_timebands[j]}")
             for trip_time, _ in grouped_timebands[j]:
                 if trip_time in per_timepoint_runtimes[tp]:
                     new_runtimes.append(per_timepoint_runtimes[tp][trip_time])  # append all days
@@ -424,9 +421,9 @@ if __name__ == "__main__":
         stop_list = tuple([s for s in stops if s != "total"])  # tuples can be dict keys
         timepoint_groups[stop_list].append(trip_time)
     timepoint_groups = list(timepoint_groups.items())
-    print(f"Sets:\n{timepoint_sets}\nGroups:\n{timepoint_groups}")
     
     variant_trips=0
+    variant_name = "Base Variant"
     # if multiple variants
     if len(timepoint_sets) > 1:
         print("Route has multiple variants.")
@@ -440,12 +437,12 @@ if __name__ == "__main__":
         print(f"tp sets:\n{timepoints}\ntp groups:\n{timepoint_groups[variant]}")
         variant_tps, variant_trips = timepoint_groups[variant]
         print(variant_trips)
+        variant_name = f"Variant {variant+1}:"
         # filter_diff_variants(route, variant_trips)
         # clean up fixed route stats to exclude timepoints they pick
         # get the trip times of the variants they want
         # call function that edits routeStats
             # go through and keep only instances of trip times in question
-            # 
     else:
         length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
     
@@ -455,9 +452,13 @@ if __name__ == "__main__":
         print(">> ", tp)
     if length == 0:
         raise ValueError("Timepoint calculation failed; route has 0 timepoints")
-    
-    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
-    percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    df_pct = np.ceil(np.linspace(30, 60, length)).astype(int).tolist()
+    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50 or press enter for default {df_pct}: ")
+    if percentiles:
+        percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    else:
+        # Blank input → default weekdays
+        percentiles = df_pct
     
     dow = "wd"
     if days_of_week == we:
@@ -482,7 +483,7 @@ if __name__ == "__main__":
         ws.append(["Outbound"])
     else:
         ws.append(["Inbound"])
-    
+    ws.append([variant_name])
     wb.save(filename)
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints,0,variant_trips)
