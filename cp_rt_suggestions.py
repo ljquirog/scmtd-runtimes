@@ -105,10 +105,10 @@ def end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0):
     runtimes_85 = {"total": {}}
     for trip_time, stops in percentile_runtimes.items():
         runtimes_85["total"][trip_time] = stops["total"]
-    # print(runtimes_85)
+    
 
     # === STEP 3: Aggregate runtimes per timeband ===
-    print("\n=== STEP 4: Aggregate runtimes per timeband ===")
+    print("\n=== STEP 3: Aggregate runtimes per timeband ===")
 
     suggested = []
     for j, (timeband_range, _) in enumerate(new_timebands):
@@ -131,9 +131,7 @@ def end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0):
 
         agg["total"] = sum(agg.values())
         print(f"  → Total runtime for timeband: {agg['total']}")
-        suggested.append(((tb_start, tb_end), agg))   
-    
-    print(suggested)
+        suggested.append(((tb_start, tb_end), agg))       
     return suggested
 
 def sched_end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0):
@@ -152,17 +150,15 @@ def sched_end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0)
     if variant_trips:
         filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
-    
 
     # === STEP 2: Run end-to-end percentile runtimes per trip ===
     print("\n=== STEP 2: Run end-to-end percentile runtimes per trip ===")
     runtimes_85 = {"total": {}}
     for trip_time, stops in schedule_runtimes.items():
         runtimes_85["total"][trip_time] = stops["total"]
-    # print(runtimes_85)
 
     # === STEP 3: Aggregate runtimes per timeband ===
-    print("\n=== STEP 4: Aggregate runtimes per timeband ===")
+    print("\n=== STEP 3: Aggregate runtimes per timeband ===")
 
     suggested = []
     for j, (timeband_range, _) in enumerate(new_timebands):
@@ -187,7 +183,6 @@ def sched_end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0)
         print(f"  → Total runtime for timeband: {agg['total']}")
         suggested.append(((tb_start, tb_end), agg))   
     
-    print(suggested)
     return suggested
  
 """
@@ -219,7 +214,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes,3) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
-    print(grouped_timebands)
     # checking what it would look like if you ran this w/ scheduled runtimes
     # percentile_runtimes = schedule_runtimes # be careful
     runtimes = percentile_runtimes if t==0 else schedule_runtimes
@@ -229,15 +223,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     '''
     # === STEP 2: Extract timepoint names from the first trip ===
     print("\n=== STEP 2: Extract timepoint names ===")
-    # timepoints = []
-    # for trip_time, stops in runtimes.items():
-    #     print(trip_time, stops)
-    #     if len(stops)-1 != len(percentiles):
-    #         print("# timepoints: ", len(stops)-1)
-    #         raise ValueError("Number of timepoints != number of percentiles provided")
-    #     timepoints = [tp for tp in stops if tp != "total"] # Grab all stop names except 'total'
-    #     break  # only need to do this once
-    
     print("Timepoints:", timepoints)
     print("Percentiles:", percentiles)
     
@@ -274,7 +259,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
         tb_start, tb_end = timeband_range
         agg = {}
         print(f"\nTimeband {tb_start} - {tb_end}")
-        print(timepoints)
         # For each timepoint, look at all trips inside this timeband group
         for tp in timepoints:
             new_runtimes = []
@@ -468,23 +452,23 @@ if __name__ == "__main__":
     elif days_of_week == "1,3,5":
         dow = 'MWF'
     
-    filename = f"route_{route}_{dow}_suggested_runtimes.xlsx"
-    # Check if workbook exists; otherwise create new
-    if os.path.exists(filename):
-        wb = load_workbook(filename)
-        ws = wb.active
-    else:
-        wb = Workbook()
-        ws = wb.active
+    # filename = f"route_{route}_{dow}_suggested_runtimes.xlsx"
+    # # Check if workbook exists; otherwise create new
+    # if os.path.exists(filename):
+    #     wb = load_workbook(filename)
+    #     ws = wb.active
+    # else:
+    #     wb = Workbook()
+    #     ws = wb.active
     
-    ws.append([f"Dates ran for: {start_date} to {end_date}"])
+    # ws.append([f"Dates ran for: {start_date} to {end_date}"])
 
-    if direction == "0":
-        ws.append(["Outbound"])
-    else:
-        ws.append(["Inbound"])
-    ws.append([variant_name])
-    wb.save(filename)
+    # if direction == "0":
+    #     ws.append(["Outbound"])
+    # else:
+    #     ws.append(["Inbound"])
+    # ws.append([variant_name])
+    # wb.save(filename)
     
     suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints,0,variant_trips)
     scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints, 1,variant_trips)
@@ -496,9 +480,9 @@ if __name__ == "__main__":
 
     # print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
-    runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
-    runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 85th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
-    runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Fall End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(suggested, route, filename,label="Suggested Runtimes",percentiles=percentiles,write_header=True)
+    # runtimes_to_csv.runtimes_to_excel(scheduled, route, filename,label="Scheduled Runtimes", write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(diff_data, route, filename,label="Diff: Suggested - Scheduled",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(end_to_end, route, filename,label="End to End 85th percentile runtime",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(diff_e2e_sugg, route, filename,label="Diff 85th - Suggested (Minimum layover)",write_header=False,add_blank_row=True)
+    # runtimes_to_csv.runtimes_to_excel(base_timebands, route, filename,label="Fall End to End Runtimes (HASTUS)",write_header=False,add_blank_row=True)
