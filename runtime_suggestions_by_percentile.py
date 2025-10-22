@@ -1,14 +1,15 @@
+import os
 import json
 import math
 import api_request
 import json_to_file
 import percentiles_test
 import runtimes_to_csv
+import numpy as np
 from datetime import datetime, timedelta
 from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
-import os
-
+from collections import defaultdict
 
 def diff_runtimes(scheduled, suggested):
     """
@@ -81,29 +82,32 @@ def get_num_timepoints(route, start, end, dow, direction):
 
     return length, timepoints
 
-def end_to_end_runtimes(route, start, end, dow, direction):
-    print("END TO END RUNTIMES")
+def end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0):
+    print("** END TO END RUNTIMES **")
     # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
     print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
     base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
+    if variant_trips:
+        filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
 
-    grouped_timebands = percentiles_test.group_timebands(percentile_runtimes) # groups trips if runtimes are within threshold
+    grouped_timebands = percentiles_test.group_timebands(percentile_runtimes,3) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
     base_route_stats = get_route_stats(route, 85, start, end, dow, direction)
+    if variant_trips:
+        filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
     
-
     # === STEP 2: Run end-to-end percentile runtimes per trip ===
     print("\n=== STEP 2: Run end-to-end percentile runtimes per trip ===")
     runtimes_85 = {"total": {}}
     for trip_time, stops in percentile_runtimes.items():
         runtimes_85["total"][trip_time] = stops["total"]
-    # print(runtimes_85)
+    
 
     # === STEP 3: Aggregate runtimes per timeband ===
-    print("\n=== STEP 4: Aggregate runtimes per timeband ===")
+    print("\n=== STEP 3: Aggregate runtimes per timeband ===")
 
     suggested = []
     for j, (timeband_range, _) in enumerate(new_timebands):
@@ -126,34 +130,34 @@ def end_to_end_runtimes(route, start, end, dow, direction):
 
         agg["total"] = sum(agg.values())
         print(f"  → Total runtime for timeband: {agg['total']}")
-        suggested.append(((tb_start, tb_end), agg))   
-    
-    print(suggested)
+        suggested.append(((tb_start, tb_end), agg))       
     return suggested
 
-def sched_end_to_end_runtimes(route, start, end, dow, direction):
+def sched_end_to_end_runtimes(route, start, end, dow, direction,variant_trips=0):
     print("END TO END RUNTIMES")
     # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
     print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
     base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
+    if variant_trips:
+        filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
 
     grouped_timebands = percentiles_test.group_timebands(schedule_runtimes, 1) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
     base_route_stats = get_route_stats(route, 90, start, end, dow, direction)
+    if variant_trips:
+        filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
-    
 
     # === STEP 2: Run end-to-end percentile runtimes per trip ===
     print("\n=== STEP 2: Run end-to-end percentile runtimes per trip ===")
     runtimes_85 = {"total": {}}
     for trip_time, stops in schedule_runtimes.items():
         runtimes_85["total"][trip_time] = stops["total"]
-    # print(runtimes_85)
 
     # === STEP 3: Aggregate runtimes per timeband ===
-    print("\n=== STEP 4: Aggregate runtimes per timeband ===")
+    print("\n=== STEP 3: Aggregate runtimes per timeband ===")
 
     suggested = []
     for j, (timeband_range, _) in enumerate(new_timebands):
@@ -178,7 +182,6 @@ def sched_end_to_end_runtimes(route, start, end, dow, direction):
         print(f"  → Total runtime for timeband: {agg['total']}")
         suggested.append(((tb_start, tb_end), agg))   
     
-    print(suggested)
     return suggested
  
 """
@@ -196,7 +199,7 @@ def sched_end_to_end_runtimes(route, start, end, dow, direction):
         list: Suggested runtimes per new timeband in the form:
               [((start_time, end_time), {timepoint: avg_runtime, ..., "total": total})]
     """   
-def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoints, t=0):
+def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoints, t=0, variant_trips=0):
     # Parse input dates (MM-DD-YYYY)
     start_dt = datetime.strptime(start, "%m-%d-%Y")
     end_dt = datetime.strptime(end, "%m-%d-%Y")
@@ -204,11 +207,12 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     # === STEP 1: Build "skeleton" timebands using default (60th percentile) ===
     print("\n=== STEP 1: Build skeleton timebands with default (60th) percentile ===")
     base_route_stats = get_route_stats(route, 60, start, end, dow, direction)
+    if variant_trips:
+        filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
     percentile_runtimes, schedule_runtimes = percentiles_test.runtime_per_trip(base_route_stats)
     grouped_timebands = percentiles_test.group_timebands(percentile_runtimes,3) # groups trips if runtimes are within threshold
     new_timebands = percentiles_test.make_timebands(grouped_timebands) # consolidate grouped trips into new timebands
 
-    print(grouped_timebands)
     # checking what it would look like if you ran this w/ scheduled runtimes
     # percentile_runtimes = schedule_runtimes # be careful
     runtimes = percentile_runtimes if t==0 else schedule_runtimes
@@ -218,15 +222,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     '''
     # === STEP 2: Extract timepoint names from the first trip ===
     print("\n=== STEP 2: Extract timepoint names ===")
-    # timepoints = []
-    # for trip_time, stops in runtimes.items():
-    #     print(trip_time, stops)
-    #     if len(stops)-1 != len(percentiles):
-    #         print("# timepoints: ", len(stops)-1)
-    #         raise ValueError("Number of timepoints != number of percentiles provided")
-    #     timepoints = [tp for tp in stops if tp != "total"] # Grab all stop names except 'total'
-    #     break  # only need to do this once
-    
     print("Timepoints:", timepoints)
     print("Percentiles:", percentiles)
     
@@ -234,13 +229,14 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
     print("\n=== STEP 3: Re-run stats for each timepoint at its assigned percentile ===")
     # Nested dict: {tp: {trip_time: [list of runtimes across days]}}
     per_timepoint_runtimes = {tp: {} for tp in timepoints}
-    print(f"Per timepoint runtimes: {per_timepoint_runtimes}")
 
     for i, p in enumerate(percentiles):
         tp = timepoints[i]
         print(f"\n-- Collecting runtimes for timepoint '{tp}' at percentile {p} --")
 
         route_stats = get_route_stats(route, p, start, end, dow, direction) 
+        if variant_trips:
+            filter_diff_variants(base_route_stats, variant_trips, "routeStats.json")
         if t==0:
             runtimes, _ = percentiles_test.runtime_per_trip(route_stats)
         else: 
@@ -254,7 +250,6 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
             if value is None:
                 continue
             per_timepoint_runtimes[tp][trip_time] = value
-    print(per_timepoint_runtimes)
 
     # === STEP 4: Aggregate runtimes per timeband ===
     print("\n=== STEP 4: Aggregate runtimes per timeband ===")
@@ -263,13 +258,10 @@ def suggested_runtimes(route, percentiles, start, end, dow, direction, timepoint
         tb_start, tb_end = timeband_range
         agg = {}
         print(f"\nTimeband {tb_start} - {tb_end}")
-        print(timepoints)
         # For each timepoint, look at all trips inside this timeband group
         for tp in timepoints:
             new_runtimes = []
             print(f"  Timepoint {tp}:")
-            print(f"Per timepoint runtimes for {tp}:\n{per_timepoint_runtimes[tp]}")
-            print(f"Trips in timeband: {grouped_timebands[j]}")
             for trip_time, _ in grouped_timebands[j]:
                 if trip_time in per_timepoint_runtimes[tp]:
                     new_runtimes.append(per_timepoint_runtimes[tp][trip_time])  # append all days
@@ -299,9 +291,42 @@ def get_end_to_end_diff(end_to_end, suggested):
         differences.append(((start_s, end_s), {"total": diff}))
     return differences
 
+def filter_diff_variants(route_stats, variant_trips, file_path="routeStats.json"):
+    """
+    Filters a routeStats JSON object to only include trips whose
+    scheduledTripStartTime is in variant_trips.
+
+    Args:
+        route_stats (dict): The routeStats JSON object (from get_route_stats()).
+        variant_trips (list): List of scheduledTripStartTime strings to keep.
+        file_path (str): Path to overwrite the JSON file (default: 'routeStats.json').
+
+    Returns:
+        dict: Filtered routeStats object.
+    """
+    if not variant_trips:
+        raise ValueError("You must provide a list of variant_trips to keep.")
+    if not isinstance(route_stats, dict):
+        raise TypeError("route_stats must be a dictionary (parsed JSON object).")
+
+    # Filter the pathStats list
+    filtered_pathStats = [
+        path for path in route_stats.get("pathStats", [])
+        if path.get("scheduledTripStartTime") in variant_trips
+    ]
+    route_stats["pathStats"] = filtered_pathStats
+
+    # Overwrite file if the file exists
+    if file_path:
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(route_stats, f, indent=2, ensure_ascii=False)
+        print(f"✅ {file_path} updated: kept {len(filtered_pathStats)} trips.")
+
+    return route_stats
+
     
 if __name__ == "__main__":
-    def_start, def_end = "09-11-2025", "10-12-2025"
+    def_start, def_end = "09-11-2025", "10-20-2025"
     wd, we = "1,2,3,4,5", "6,7"
 
     date_presets = {
@@ -364,42 +389,54 @@ if __name__ == "__main__":
     route = input("* Route: ")
     direction = input("* Direction (0=outbound, 1=inbound): ")
 
-    runtimes = fixed_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
-    runtimes, _ = percentiles_test.runtime_per_trip(fixed_route_stats)
+    fixed_route_stats = get_route_stats(route, 60, start_date, end_date, days_of_week, direction)
+    runtimes, _ = percentiles_test.runtime_per_trip(fixed_route_stats) # groups into arrows
 
-    timepoint_length = dict()
-    # check to see if route has multiple variants (based on when # timepoints differs)
+    # identify all unique variants in a list, based on diff timepoints (even if # timepoints is the same)
+    timepoint_sets = []
     for trip_time, stops in runtimes.items():
-        # Make sure user provided the right number of percentiles
-        length = len(stops)-1
-        timepoint_length[length] = stops
+        stop_list = [s for s in stops if s != "total"]
+        if stop_list not in timepoint_sets:
+            timepoint_sets.append(stop_list)
     
-    # have user choose which variant to run
-    test = []
-    stop_list = []
-
-    if len(timepoint_length) > 1:
+    timepoint_groups = defaultdict(list)
+    for trip_time, stops in runtimes.items():
+        stop_list = tuple([s for s in stops if s != "total"])  # tuples can be dict keys
+        timepoint_groups[stop_list].append(trip_time)
+    timepoint_groups = list(timepoint_groups.items())
+    
+    variant_trips=0
+    variant_name = "Base Variant"
+    # if multiple variants
+    if len(timepoint_sets) > 1:
         print("Route has multiple variants.")
-        for i, (length, stops) in enumerate(timepoint_length.items(), start=1):
+        for i, stops in enumerate(timepoint_sets, start=1):
             print(f"\nOption {i}:")
-            for stop in list(stops)[:-1]:
+            for stop in list(stops):
                 print(stop)
-            test.append(stops)  # store each variant's stops
         variant = int(input("\nWhich variant would you like to run? ")) - 1
-        timepoints = [stop for stop in test[variant] if stop != "total"]
+        timepoints = timepoint_sets[variant]
         length = len(timepoints)
+        print(f"tp sets:\n{timepoints}\ntp groups:\n{timepoint_groups[variant]}")
+        variant_tps, variant_trips = timepoint_groups[variant]
+        print(variant_trips)
+        variant_name = f"Variant {variant+1}:"
     else:
         length, timepoints = get_num_timepoints(route, start_date, end_date, days_of_week, direction)
-
+    
 
     print(f"\n> Route {route} has {length} timepoints for dates {start_date} to {end_date}:")
     for tp in timepoints:
         print(">> ", tp)
     if length == 0:
         raise ValueError("Timepoint calculation failed; route has 0 timepoints")
-    
-    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50\n")
-    percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    df_pct = np.ceil(np.linspace(30, 60, length)).astype(int).tolist()
+    percentiles = input(f"\n* List the percentiles you'd like each timepoint to be ran at.\n** Format: 30,40,50 or press enter for default {df_pct}: ")
+    if percentiles:
+        percentiles = [int(x.strip()) for x in percentiles.split(",")]
+    else:
+        # Blank input → default weekdays
+        percentiles = df_pct
     
     dow = "wd"
     if days_of_week == we:
@@ -424,16 +461,16 @@ if __name__ == "__main__":
         ws.append(["Outbound"])
     else:
         ws.append(["Inbound"])
-    
+    ws.append([variant_name])
     wb.save(filename)
-    
-    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints,0)
-    scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints, 1)
+    print(variant_trips)
+    suggested = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints,0,variant_trips)
+    scheduled = suggested_runtimes(route, percentiles, start_date, end_date, days_of_week, direction, timepoints, 1,variant_trips)
     # print(suggested)
     diff_data = diff_runtimes(suggested, scheduled)
-    end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction)
+    end_to_end = end_to_end_runtimes(route, start_date, end_date, days_of_week, direction,variant_trips)
     diff_e2e_sugg = get_end_to_end_diff(end_to_end, suggested)
-    base_timebands = sched_end_to_end_runtimes(route, comp_start, comp_end, days_of_week, direction)
+    base_timebands = sched_end_to_end_runtimes(route, comp_start, comp_end, days_of_week, direction, variant_trips)
 
     # print("suggested:\n", suggested, "\nend_to_end:\n", end_to_end, "\ne2e diff:\n", diff_e2e_sugg)
 
