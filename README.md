@@ -15,3 +15,5 @@ timebands_by_percentile.py > makes timeband groups, puts them into csv
 
 runtime_suggestions_by_percentile.py > makes runtime suggestions per new timebands
 runtimes_to_csv.py
+
+to run the program, type "python3" before the program name.
